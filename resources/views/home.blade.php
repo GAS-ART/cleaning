@@ -60,7 +60,7 @@
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
                         <video autoplay playsinline muted loop preload="auto" class="gif">
-
+                           <source type="video/webm" src="{{ asset('img/gif/old/5.webm') }}">
                            <source type="video/mp4" src="{{ asset('img/gif/old/5.mp4') }}">
                         </video>
                      </div>
@@ -80,7 +80,7 @@
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
                         <video autoplay playsinline muted loop preload="auto" class="gif">
-
+                           <source type="video/webm" src="{{ asset('img/gif/old/7.webm') }}">
                            <source type="video/mp4" src="{{ asset('img/gif/old/7.mp4') }}">
                         </video>
                      </div>
@@ -103,7 +103,7 @@
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
                         <video autoplay playsinline muted loop preload="auto" class="gif">
-
+                           <source type="video/webm" src="{{ asset('img/gif/old/6_1.mp4') }}">
                            <source type="video/mp4" src="{{ asset('img/gif/old/6_1.mp4') }}">
                         </video>
                      </div>
@@ -123,7 +123,7 @@
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
                         <video autoplay playsinline muted loop preload="auto" class="gif">
-
+                           <source type="video/webm" src="{{ asset('img/gif/old/8.webm') }}">
                            <source type="video/mp4" src="{{ asset('img/gif/old/8.mp4') }}">
                         </video>
                      </div>
