@@ -660,8 +660,9 @@ svg {
 }
 .servise__row {
    display: flex;
-   flex-direction: row;
-   justify-content: space-around;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 .servise__item {
    margin: 0 0 30px 0;
@@ -709,29 +710,29 @@ svg {
    transition: all 1s ease 0s;
    width: 100%;
    height: 100%;
-   background-color: darkblue;
-   color: #ffffff;
-   font-size: 16px;
+   background: linear-gradient(90deg, #94c5ed 0%, #94c5ed 100%);
+   color: darkblue;
+   font-size: 20px;
    letter-spacing: 2px;
+   font-weight: 600;
+
    display: flex;
    align-items: center;
    text-align: center;
-   line-height: 20px;
+   line-height: 30px;
 }
 .servise__item-gif-text p {
    padding: 0 10px;
 }
 video {
-   min-width: 340px;
-
    cursor: pointer;
 }
-.servise__block:last-child .servise__item:first-child video {
+/*.servise__block:last-child .servise__item:first-child video {
    max-height: 193.25px;
 }
 .servise__block:last-child .servise__item:last-child video {
    max-height: 340px;
-}
+}*/
 .servise__item-details {
    display: flex;
    justify-content: center;
@@ -1143,7 +1144,7 @@ video {
       text-align: center;
    }
    .servise__item-gif-text {
-      max-width: 340px;
+      /* max-width: 340px;*/
       left: 50%;
       transform: translate(-50%) rotateY(-180deg);
    }
@@ -1416,6 +1417,12 @@ video {
       max-height: 50px;
       align-items: flex-end;
    }
+   video {
+      max-width: 404px;
+   }
+   .servise__item-gif-text {
+      line-height: 20px;
+   }
 }
 
 @media (max-width: 375px) {
@@ -1452,6 +1459,9 @@ video {
    .messengers-row {
       margin: 0 -15px;
    }
+   video {
+      max-width: 360px;
+   }
 }
 @media (max-width: 360px) {
    .messengers {
@@ -1464,6 +1474,9 @@ video {
       width: 250px;
       height: 250px;
       margin: 0 0 0 0;
+   }
+   video {
+      max-width: 350px;
    }
 }
 
@@ -1550,7 +1563,7 @@ video {
       font-size: 18px;
    }
    video {
-      min-width: 310px;
+      max-width: 310px;
    }
 }
 
@@ -1583,16 +1596,17 @@ video {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 35px 0 0 0;
    }
    .servise__row .servise__block:last-child .servise__item:last-child .servise__item-gif-text p {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 35px 0 0 0;
    }
 
    video {
-      min-width: 200px;
-      width: 270px;
+      max-width: 270px;
    }
    .messengers {
       top: 92%;
