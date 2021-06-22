@@ -43,7 +43,7 @@
                      <div class="stages-item-title">
                         <h2>Отмываем стекла</h2>
                      </div>
-                     <div class="stages-item-img">
+                     <div class="stages-item-img correct-img">
                         <img src="{{ asset('img/stages/washing_windows/3.jpg') }}" alt="">
                      </div>
                      <div class="stages-item-description">

@@ -44,7 +44,7 @@
                         <h2>Проработка пятен сложных мест</h2>
                      </div>
                      <div class="stages-item-img">
-                        <img src="{{ asset('img/stages/dry_clining/dry_clining_3.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/dry_clining/dry_clining_4.jpg') }}" alt="">
                      </div>
                      <div class="stages-item-description">
                         <p>После прохождения орбитальной машиной, возможно, останутся пятна от краски или клея, вина, кофе. С помощью подбора активной химии и повторной проработки, убираются остальные пятна</p>
@@ -56,8 +56,8 @@
                      <div class="stages-item-title">
                         <h2>Собираем грязь</h2>
                      </div>
-                     <div class="stages-item-img">
-                        <img src="{{ asset('img/stages/dry_clining/dry_clining_4.jpg') }}" alt="">
+                     <div class="stages-item-img correct-img">
+                        <img src="{{ asset('img/stages/dry_clining/dry_clining_3.jpg') }}" alt="">
                      </div>
                      <div class="stages-item-description">
                         <p>Грязь и остатки химии необходимо собрать, а в ручную это сделать невозможно. С помощью специального моющего пылесоса собирается, все остатки пыли грязи. Этот процесс восстанавливает первичный цвет ткани и даёт свежесть мебели</p>

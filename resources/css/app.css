@@ -807,7 +807,7 @@ video {
    object-fit: cover;
    justify-self: center;
 }
-.stages-row .stages-item:nth-child(3) .stages-item-img img {
+.correct-img img {
    transform: translate(-70px, 0);
 }
 .stages-item-description {
