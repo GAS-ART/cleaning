@@ -377,6 +377,7 @@ svg {
    position: relative;
    padding: 10px;
    z-index: 5;
+   white-space: nowrap;
 }
 .call-oder-button:before {
    content: "";
