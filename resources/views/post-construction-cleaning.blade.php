@@ -1,4 +1,6 @@
 @extends('layout')
+@section('ogTitle','УБОРКА ПОСЛЕСТРОЯ :: ПРОСТО ЧИСТО')
+@section('ogDescription','Профессиональная послестроительная уборка в Днепре.')
 @section('title','ПРОСТО ЧИСТО - Послестроительная уборка в Днепре')
 @section('postConstructionCleaning','active')
 

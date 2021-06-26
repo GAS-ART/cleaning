@@ -1,4 +1,6 @@
 @extends('layout')
+@section('ogTitle','МОЙКА ОКОН :: ПРОСТО ЧИСТО')
+@section('ogDescription','Качественная мойка окон в Днепре. Новейшее оборудование и органическая химия')
 @section('title','ПРОСТО ЧИСТО - Мойка окон в Днепре')
 @section('washingWindows','active')
 

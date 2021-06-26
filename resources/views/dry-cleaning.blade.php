@@ -1,4 +1,6 @@
 @extends('layout')
+@section('ogTitle','ХИМЧИСТКА МЕБЕЛИ :: ПРОСТО ЧИСТО')
+@section('ogDescription','Профессиональная химчистка мебели в Днепре. Новейшее оборудование и органическая химия')
 @section('title','ПРОСТО ЧИСТО - химчистка мебели в Днепре')
 @section('dryCleaning','active')
 
