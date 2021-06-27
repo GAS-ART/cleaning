@@ -1,6 +1,13 @@
 @extends('layout')
 @section('ogTitle','ГЕНЕРАЛЬНАЯ УБОКА :: ПРОСТО ЧИСТО')
 @section('ogDescription','Профессиональная уборка домов, офисов, ресторанов в Днепре. Новейшее оборудование и органическая химия')
+@section('ogVideo')
+<meta property = "og:video" content = "https://www.xn--c1ajagfnb.dp.ua/img/gif/old/7.mp4" />
+<meta property = "og:video:secure_url" content = "https://www.xn--c1ajagfnb.dp.ua/img/gif/old/7.mp4" />
+<meta property = "og:video:type" content = "video/mp4" />
+<meta property = "og:video:width" content = "360" />
+<meta property = "og:video:height" content = "200" />
+@endsection
 @section('title','ПРОСТО ЧИСТО - Генеральная уборка в Днепре')
 @section('springCleaning','active')
 

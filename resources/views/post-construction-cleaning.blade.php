@@ -1,6 +1,13 @@
 @extends('layout')
 @section('ogTitle','УБОРКА ПОСЛЕСТРОЯ :: ПРОСТО ЧИСТО')
 @section('ogDescription','Профессиональная послестроительная уборка в Днепре.')
+@section('ogVideo')
+<meta property = "og:video" content = "https://www.xn--c1ajagfnb.dp.ua/img/gif/old/8.mp4" />
+<meta property = "og:video:secure_url" content = "https://www.xn--c1ajagfnb.dp.ua/img/gif/old/8.mp4" />
+<meta property = "og:video:type" content = "video/mp4" />
+<meta property = "og:video:width" content = "360" />
+<meta property = "og:video:height" content = "200" />
+@endsection
 @section('title','ПРОСТО ЧИСТО - Послестроительная уборка в Днепре')
 @section('postConstructionCleaning','active')
 
