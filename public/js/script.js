@@ -1,1 +1,237 @@
-window.onload=function(){var e=document.querySelectorAll(".call-oder-button"),t=document.getElementById("popup"),s=document.getElementById("body"),o=document.querySelector(".close-popup"),n=document.querySelector(".confirm__button"),r=document.querySelector(".popup__text"),c=document.querySelector(".popup__title"),l=document.querySelector(".popup__confirm"),a=document.getElementById("send-form"),d=document.querySelectorAll(".servise__item-gif"),u=document.querySelector(".button-after"),m=document.querySelector(".button-before"),v=document.querySelector(".button-none");function p(){return window.setInterval((function(){e[0].classList.contains("animate")?(e[0].classList.remove("animate"),e[0].classList.add("active")):(e[0].classList.remove("active"),e[0].classList.add("animate"))}),1500)}e[0].classList.add("animate");var f=p();for(e[0].addEventListener("mouseover",(function(){clearInterval(f)})),e[0].addEventListener("mouseout",(function(){t.classList.contains("open")||(f=p())})),u&&(u.addEventListener("click",(function(){var e=document.querySelectorAll(".slick-active .after"),t=document.querySelectorAll(".slick-active .before");for(i=0;i<e.length&&t.length;i++)e[i].classList.add("active"),t[i].classList.remove("active")})),m.addEventListener("click",(function(){var e=document.querySelectorAll(".slick-active .after"),t=document.querySelectorAll(".slick-active .before");for(i=0;i<e.length&&t.length;i++)t[i].classList.add("active"),e[i].classList.remove("active")})),v.addEventListener("click",(function(){var e=document.querySelectorAll(".slick-active .after"),t=document.querySelectorAll(".slick-active .before");for(i=0;i<e.length&&t.length;i++)t[i].classList.remove("active"),e[i].classList.remove("active")}))),i=0;i<e.length;i++)e[i].addEventListener("click",(function(e){t.classList.add("open"),s.classList.add("lock"),t.addEventListener("click",(function(e){e.target.closest(".popup__content")||L()})),e.preventDefault()}));function L(){t.classList.remove("open"),s.classList.remove("lock"),r.classList.remove("disabled"),l.classList.remove("active"),c.classList.remove("disabled"),$(".name-error").html(""),$(".phone-error").html(""),clearInterval(f),f=p()}for(o.addEventListener("click",(function(e){L(),e.preventDefault()})),n.addEventListener("click",(function(e){L()})),$(".burger").click((function(){$(".burger, .header-menu").toggleClass("active"),$("body").toggleClass("lock")})),i=0;i<d.length;i++)d[i].addEventListener("click",(function(){for(this.classList.toggle("spin"),k=0;k<d.length;k++)d[k]!==this&&d[k].classList.remove("spin")}));$(".slider-clients").slick({slidesToShow:3,slidesToScroll:1,dots:!0,adaptiveHeight:!0,responsive:[{breakpoint:1025,settings:{slidesToShow:3,slidesToScroll:3,infinite:!0,dots:!0}},{breakpoint:770,settings:{slidesToShow:2,slidesToScroll:2}},{breakpoint:560,settings:{slidesToShow:1,slidesToScroll:1}}]}),$(".slider-work-examples").slick({slidesToShow:2,slidesToScroll:1,dots:!0,adaptiveHeight:!0,infinite:!0,responsive:[{breakpoint:700,settings:{slidesToShow:1}}]});var h=document.querySelectorAll(".slick-arrow"),S=document.querySelectorAll(".work-examples-item img");for(i=0;i<h.length;i++)h[i].addEventListener("click",(function(){for(i=0;i<S.length;i++)S[i].classList.remove("active")}));$("#send-form").submit((function(e){e.preventDefault(),$.ajax({type:"POST",url:"https://www.клининг.dp.ua/send",data:new FormData(this),contentType:!1,cache:!1,processData:!1,success:function(){r.classList.add("disabled"),c.classList.add("disabled"),l.classList.add("active"),a.reset()},error:function(e){e.responseJSON.errors.name?$(".name-error").html(e.responseJSON.errors.name[0]):$(".name-error").html(""),e.responseJSON.errors.phone?$(".phone-error").html(e.responseJSON.errors.phone[0]):$(".phone-error").html("")}})}))};
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!********************************!*\
+  !*** ./resources/js/script.js ***!
+  \********************************/
+window.onload = function () {
+  var callOderButton = document.querySelectorAll('.call-oder-button');
+  var popUp = document.getElementById('popup');
+  var bodyLock = document.getElementById("body");
+  var popupCloseIcon = document.querySelector('.close-popup');
+  var popupButton = document.querySelector('.confirm__button');
+  var popupText = document.querySelector('.popup__text');
+  var popupTitle = document.querySelector('.popup__title');
+  var popupConfirm = document.querySelector('.popup__confirm');
+  var sendForm = document.getElementById('send-form');
+  var flipCards = document.querySelectorAll('.servise__item-gif'); //   const detailsButton = document.querySelectorAll('.details-button');
+
+  var buttonAfter = document.querySelector('.button-after');
+  var buttonBefore = document.querySelector('.button-before');
+  var buttonNone = document.querySelector('.button-none');
+  callOderButton[0].classList.add('animate');
+
+  function animation() {
+    return window.setInterval(function () {
+      if (callOderButton[0].classList.contains('animate')) {
+        callOderButton[0].classList.remove('animate');
+        callOderButton[0].classList.add('active');
+      } else {
+        callOderButton[0].classList.remove('active');
+        callOderButton[0].classList.add('animate');
+      }
+    }, 1500);
+  }
+
+  var animate = animation();
+  callOderButton[0].addEventListener('mouseover', function () {
+    clearInterval(animate);
+  });
+  callOderButton[0].addEventListener('mouseout', function () {
+    if (!popUp.classList.contains("open")) {
+      animate = animation();
+    }
+  });
+
+  if (buttonAfter) {
+    buttonAfter.addEventListener('click', function () {
+      var after = document.querySelectorAll('.slick-active .after');
+      var before = document.querySelectorAll('.slick-active .before');
+
+      for (i = 0; i < after.length && before.length; i++) {
+        after[i].classList.add('active');
+        before[i].classList.remove('active');
+      }
+    });
+    buttonBefore.addEventListener('click', function () {
+      var after = document.querySelectorAll('.slick-active .after');
+      var before = document.querySelectorAll('.slick-active .before');
+
+      for (i = 0; i < after.length && before.length; i++) {
+        before[i].classList.add('active');
+        after[i].classList.remove('active');
+      }
+    });
+    buttonNone.addEventListener('click', function () {
+      var after = document.querySelectorAll('.slick-active .after');
+      var before = document.querySelectorAll('.slick-active .before');
+
+      for (i = 0; i < after.length && before.length; i++) {
+        before[i].classList.remove('active');
+        after[i].classList.remove('active');
+      }
+    });
+  }
+  /*POPUP*/
+
+
+  for (i = 0; i < callOderButton.length; i++) {
+    var button = callOderButton[i];
+    button.addEventListener('click', function (e) {
+      popUp.classList.add("open");
+      bodyLock.classList.add("lock");
+      popUp.addEventListener("click", function (e) {
+        if (!e.target.closest('.popup__content')) {
+          popupClose();
+        }
+      });
+      e.preventDefault();
+    });
+  }
+
+  popupCloseIcon.addEventListener("click", function (e) {
+    popupClose();
+    e.preventDefault();
+  });
+  popupButton.addEventListener("click", function (e) {
+    popupClose();
+  });
+
+  function popupClose() {
+    popUp.classList.remove('open');
+    bodyLock.classList.remove("lock");
+    popupText.classList.remove('disabled');
+    popupConfirm.classList.remove('active');
+    popupTitle.classList.remove('disabled');
+    $(".name-error").html('');
+    $(".phone-error").html('');
+    clearInterval(animate);
+    animate = animation();
+  }
+  /*POPUP*/
+
+  /*BURGER*/
+
+
+  $('.burger').click(function () {
+    $('.burger, .header-menu').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
+  /*BURGER*/
+
+  /*ANIMATION SERVICE CARD FOR MOBILE HOVER*/
+
+  for (i = 0; i < flipCards.length
+  /*&& detailsButton.length*/
+  ; i++) {
+    flipCards[i].addEventListener('click', function () {
+      this.classList.toggle('spin');
+
+      for (k = 0; k < flipCards.length; k++) {
+        if (flipCards[k] !== this) {
+          flipCards[k].classList.remove('spin');
+        }
+      }
+    });
+    /*     detailsButton[i].addEventListener('click', function () {
+            let currentBlock = this;
+            let currentParent = currentBlock.closest('.servise__item-details')
+            let flipBlock = currentParent.previousElementSibling;
+            flipBlock.classList.toggle('spin');
+            for (k = 0; k < flipCards.length; k++) {
+               if (flipCards[k] !== flipBlock) {
+                  flipCards[k].classList.remove('spin');
+               }
+            }
+         });*/
+  }
+  /*ANIMATION SERVICE CARD FOR MOBILE HOVER*/
+
+  /*SLICK SLIDER*/
+
+
+  $('.slider-clients').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    adaptiveHeight: true,
+    //centerMode: true,
+    responsive: [{
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    }, {
+      breakpoint: 770,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }, {
+      breakpoint: 560,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+  $('.slider-work-examples').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    adaptiveHeight: true,
+    infinite: true,
+    //centerMode: true,
+    responsive: [{
+      breakpoint: 700,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
+  });
+  var slickArrow = document.querySelectorAll('.slick-arrow');
+  var slickSlideImg = document.querySelectorAll('.work-examples-item img');
+
+  for (i = 0; i < slickArrow.length; i++) {
+    slickArrow[i].addEventListener('click', function () {
+      for (i = 0; i < slickSlideImg.length; i++) {
+        slickSlideImg[i].classList.remove('active');
+      }
+    });
+  }
+
+  $("#send-form").submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+      type: 'POST',
+      url: 'https://www.клининг.dp.ua/send',
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function success() {
+        popupText.classList.add('disabled');
+        popupTitle.classList.add('disabled');
+        popupConfirm.classList.add('active');
+        sendForm.reset();
+      },
+      error: function error(err) {
+        if (err.responseJSON.errors.name) {
+          $(".name-error").html(err.responseJSON.errors.name[0]);
+        } else {
+          $(".name-error").html('');
+        }
+
+        if (err.responseJSON.errors.phone) {
+          $(".phone-error").html(err.responseJSON.errors.phone[0]);
+        } else {
+          $(".phone-error").html('');
+        }
+      }
+    });
+  });
+};
+/******/ })()
+;
