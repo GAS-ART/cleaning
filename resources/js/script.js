@@ -14,6 +14,34 @@ window.onload = function () {
    const buttonBefore = document.querySelector('.button-before');
    const buttonNone = document.querySelector('.button-none');
 
+   callOderButton[0].classList.add('animate');
+
+   function animation() {
+      return window.setInterval(() => {
+         if (callOderButton[0].classList.contains('animate')) {
+            callOderButton[0].classList.remove('animate');
+            callOderButton[0].classList.add('active');
+         } else {
+            callOderButton[0].classList.remove('active');
+            callOderButton[0].classList.add('animate');
+         }
+
+      }, 1500);
+
+   }
+   let animate = animation();
+
+   callOderButton[0].addEventListener('mouseover', () => {
+      clearInterval(animate);
+   })
+
+   callOderButton[0].addEventListener('mouseout', () => {
+      if (!popUp.classList.contains("open")) {
+         animate = animation();
+      }
+   });
+
+
    if (buttonAfter) {
       buttonAfter.addEventListener('click', function () {
          let after = document.querySelectorAll('.slick-active .after');
@@ -74,6 +102,8 @@ window.onload = function () {
       popupTitle.classList.remove('disabled');
       $(".name-error").html('');
       $(".phone-error").html('');
+      clearInterval(animate);
+      animate = animation();
    }
    /*POPUP*/
 

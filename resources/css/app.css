@@ -401,7 +401,7 @@ svg {
 .call-oder-button:focus::before {
    opacity: 1;
 }
-.call-oder-button::after {
+.call-oder-button.animate::after {
    content: "";
    width: 30px;
    height: 30px;
@@ -412,13 +412,28 @@ svg {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   animation: ring 1.5s infinite;
+   pointer-events: none;
+   animation: ring 1.5s;
+}
+.call-oder-button.active::after {
+   content: "";
+   width: 30px;
+   height: 30px;
+   border-radius: 100%;
+   border: 6px solid #00ffcb;
+   position: absolute;
+   z-index: -1;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+   animation: ringActive 1.5s;
 }
 .call-oder-button:hover::after,
 .call-oder-button:focus::after {
    animation: none;
 }
-@-webkit-keyframes ring {
+@keyframes ring {
    0% {
       width: 30px;
       height: 30px;
@@ -430,7 +445,7 @@ svg {
       opacity: 0;
    }
 }
-@keyframes ring {
+@keyframes ringActive {
    0% {
       width: 30px;
       height: 30px;
