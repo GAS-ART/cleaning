@@ -200,7 +200,7 @@ window.onload = function () {
       event.preventDefault();
       $.ajax({
          type: 'POST',
-         url: 'https://www.клининг.dp.ua/send',
+         url: 'https://клининг.dp.ua/send',
          data: new FormData(this),
          contentType: false,
          cache: false,
