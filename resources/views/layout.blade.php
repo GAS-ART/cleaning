@@ -10,6 +10,7 @@
    <meta property="og:type" content="website" />
    <meta property="og:title" content="@yield('ogTitle')" />
    <meta property="og:description" content="@yield('ogDescription')" />
+   <meta property="og:site_name" content="клининг.dp.ua" />
    <meta property="og:image" content="https://xn--c1ajagfnb.dp.ua/img/icons/logo.png" />
    @yield('ogVideo')
 
