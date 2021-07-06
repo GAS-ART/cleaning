@@ -216,6 +216,9 @@ window.onload = function () {
         popupTitle.classList.add('disabled');
         popupConfirm.classList.add('active');
         sendForm.reset();
+        gtag('event', 'conversion', {
+          'send_to': 'AW-957048846/ti3ACLCwzNACEI7QrcgD'
+        }); // Google event snippet for Website lead conversion page
       },
       error: function error(err) {
         if (err.responseJSON.errors.name) {
