@@ -25,6 +25,17 @@
    <!-- Global site tag (gtag.js) - Google Ads: 957048846 -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-957048846"></script>
    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-957048846');</script>
+   
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBNQ39W38Z"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'G-MBNQ39W38Z');
+   </script>
+   
    <title>@yield('title')</title>
 </head>
 
