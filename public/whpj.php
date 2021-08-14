@@ -3,13 +3,12 @@ $raw = file_get_contents('php://input');
 	$data = json_decode($raw, true);
 if ($data['google_key'] === '26ahAmim'){
 	//print_r($data);
-	$name 	 = sanitizeString($data['user_column_data']['1']['string_value']);
-	$phone 	 = sanitizeString($data['user_column_data']['0']['string_value']);
+	$name 	 = sanitizeString($data['user_column_data']['0']['string_value']);
+	$phone 	 = sanitizeString($data['user_column_data']['1']['string_value']);
 	$service = sanitizeString($data['user_column_data']['2']['string_value']);
 	$hook 	 = "Полное имя" . ": " . $name . "\n\n" . "Телефон"  . ": " . $phone . "\n\n" ."Вид услуги: " . $service . "\n\n";
 	mail('temoha1386@gmail.com', 'ЗАЯВКА С ФОРМЫ ГУГЛ', $hook);
 }
-else mail('temoha1386@gmail.com', 'ОШИБКА ЗАЯВКИ С ФОРМЫ ГУГЛ', 'ОШИБКА');
 
 function sanitizeString($var)
 {
