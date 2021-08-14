@@ -20,3 +20,4 @@ Route::get('/Мойка_окон', function () {return view('washing-windows');}
 Route::get('/Генеральная_уборка', function () {return view('spring-cleaning');})->name('spring-cleaning');
 Route::get('/Послестроительная_уборка', function () {return view('post-construction-cleaning');})->name('post-construction-cleaning');
 Route::post('/send', 'App\Http\Controllers\sendController@submit')->name('send');
+Route::get('/politika_konfidencialnosti', function () {return view('politika_konfidencialnosti');})->name('politika_konfidencialnosti');
