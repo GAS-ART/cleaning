@@ -124,8 +124,8 @@
                <img src="{{ asset('img/work_examplеs/dry_cleaning/5_before.jpg') }}" class="clip before"></img>
             </div>
             <div class="work-examples-item">
-               <img src="{{ asset('img/work_examplеs/dry_cleaning/6_after.jpg') }}" class="clip after"></img>
-               <img src="{{ asset('img/work_examplеs/dry_cleaning/6_before.jpg') }}" class="clip before"></img>
+               <img src="{{ asset('img/work_examplеs/dry_cleaning/6_before.jpg') }}" class="clip after"></img>
+               <img src="{{ asset('img/work_examplеs/dry_cleaning/6_after.jpg') }}" class="clip before"></img>
             </div>
          </div>
          <div class="work-examples-buttom">
