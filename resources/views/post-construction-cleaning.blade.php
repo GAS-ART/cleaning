@@ -27,7 +27,7 @@
                         <h2>Сбор мусора</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
-                        <img src="{{ asset('img/stages/post_construction_cleaning/1.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-1.jpg') }}" alt="Соберем весь мусор после строительства. Клининг - Уборка после стройки" title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
                         <p>Сбор и вывоз с объекта всего строительного мусора. Под этим подразумевается сбор в специальные мешки и контейнеры всего крупного и мелкого строительного мусора, который обязательно удаляется перед тем, как специалисты приступают к более тщательным процедурам</p>
@@ -40,7 +40,7 @@
                         <h2>Мойка окон и стеклянных изделий</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
-                        <img src="{{ asset('img/stages/post_construction_cleaning/2.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-2.jpg') }}" alt="Отмоем окна и зеркала. Клининг - Уборка после стройки" title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
                         <p>После ремонта на стеклах и зеркалах обычно остается большое количество защитных пленок, строительный скотч и прочие не самые приятные напоминания о прошедшем пыльном ремонте. Их необходимо тщательно и аккуратно удалить</p>
@@ -53,7 +53,7 @@
                         <h2>Санузил</h2>
                      </div>
                      <div class="stages-item-img correct-img">
-                        <img src="{{ asset('img/stages/post_construction_cleaning/3.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-3.jpg') }}" alt="Моем ванную и туалет. Клининг - Уборка после стройки" title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
                         <p>Приведение в порядок всех санузлов. Данный комплекс процедур выполняется с обязательной последующей образом и отдельно от всех видов работ. Убираем всю грязь со стен (капли краски, затирка, пыль и т.д.), окон, умывальников, туалетов, полов.</p>
@@ -66,7 +66,7 @@
                         <h2>Удаление пыли</h2>
                      </div>
                      <div class="stages-item-img">
-                        <img src="{{ asset('img/stages/post_construction_cleaning/4.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-4.jpg') }}" alt="Убираем пыль, влажная уборка. Клининг - Уборка после стройки" title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
                         <p>Очень важный этап клининговых процедур, причем после строительства обычными влажными тряпками здесь уже не обойтись. Специалисты обязательно используют профессиональное оборудование. В некоторых случаях возможно комбинировать сухую и влажную уборку пыли</p>
@@ -79,7 +79,7 @@
                         <h2>Полы</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
-                        <img src="{{ asset('img/stages/post_construction_cleaning/5.jpg') }}" alt="">
+                        <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-5.jpg') }}" alt="Моем полы. Клининг - Уборка после стройки" title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
                         <p>Собираем всю пыль, влажная уборка.  Удаление всех образовавшихся стойких загрязнений в плитки, швах и других напольных поверхностей. После ремонта их особенно много: капли лака, цементный раствор, замазка, а также различная строительная пена. При этом для каждого типа загрязнения имеется своя особая технология удаления, что обязательно учитывают специалисты.</p>

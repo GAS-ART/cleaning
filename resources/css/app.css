@@ -830,6 +830,7 @@ video {
    overflow: hidden;
    max-width: 300px;
    min-height: 270px;
+   height: 1px;
 }
 .stages-item-img img {
    max-width: 370px;
