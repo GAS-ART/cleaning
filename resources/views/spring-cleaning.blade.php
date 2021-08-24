@@ -115,16 +115,16 @@
                <img src="{{ asset('img/work_examplеs/spring_clining/1_before.jpg') }}" class="clip before"></img>
             </div>
             <div class="work-examples-item">
-               <img src="{{ asset('img/work_examplеs/spring_clining/4_after.jpg') }}" class="clip after"></img>
-               <img src="{{ asset('img/work_examplеs/spring_clining/4_before.jpg') }}" class="clip before"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/4_before.jpg') }}" class="clip after"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/4_after.jpg') }}" class="clip before"></img>
             </div>
             <div class="work-examples-item">
-               <img src="{{ asset('img/work_examplеs/spring_clining/5_after.jpg') }}" class="clip after"></img>
-               <img src="{{ asset('img/work_examplеs/spring_clining/5_before.jpg') }}" class="clip before"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/5_before.jpg') }}" class="clip after"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/5_after.jpg') }}" class="clip before"></img>
             </div>
             <div class="work-examples-item">
-               <img src="{{ asset('img/work_examplеs/spring_clining/6_after.jpg') }}" class="clip after"></img>
-               <img src="{{ asset('img/work_examplеs/spring_clining/6_before.jpg') }}" class="clip before"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/6_before.jpg') }}" class="clip after"></img>
+               <img src="{{ asset('img/work_examplеs/spring_clining/6_after.jpg') }}" class="clip before"></img>
             </div>
          </div>
          <div class="work-examples-buttom">
