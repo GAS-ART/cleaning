@@ -7,7 +7,7 @@
                   <h4>контакты</h4>
                </div>
                <div class="contacts-phone">
-                  <a href="tel:(098) 118-31-19">(098)118-31-19</a>
+                  <a href="tel:(097) 639-45-15">(097)639-45-15</a>
                </div>
                <div class="contacts-phone">
                   <a href="tel:(098) 664-26-36">(063)664-26-36</a>
