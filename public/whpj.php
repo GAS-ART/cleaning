@@ -7,13 +7,13 @@ if ($data['google_key'] === '26ahAmim'){
 	$phone 	 = sanitizeString($data['user_column_data']['1']['string_value']);
 	$service = sanitizeString($data['user_column_data']['2']['string_value']);
 	$hook 	 = "Полное имя" . ": " . $name . "\n\n" . "Телефон"  . ": " . $phone . "\n\n" ."Вид услуги: " . $service . "\n\n";
-	mail('sashs5288@gmail.com', 'ЗАЯВКА С ФОРМЫ ГУГЛ', $hook);
+	mail('zviktor26@gmail.com', 'ЗАЯВКА С ФОРМЫ ГУГЛ', $hook);
 }
 
 function sanitizeString($var)
 {
   if (get_magic_quotes_gpc())
-    	$var = stripslashes($var);
+   $var = stripslashes($var);
 	$var = htmlentities($var);
 	$var = strip_tags($var);
 	$var = urldecode($var);
