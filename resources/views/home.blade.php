@@ -1,6 +1,7 @@
 @extends('layout')
 @section('ogTitle','Клининг сервис :: ПРОСТО ЧИСТО')
-@section('ogDescription','Профессиональная уборка квартир, домов, офисов, ресторанов и химчистка мебели. Новейшее оборудование и органическая химия')
+@section('ogDescription','Профессиональная уборка квартир, домов, офисов, ресторанов и химчистка мебели. Новейшее
+оборудование и органическая химия')
 @section('title','ПРОСТО ЧИСТО - Клининговая компания в Днепре')
 @section('main','active')
 
@@ -17,23 +18,35 @@
                </div>
                <div class="container">
                   <div class="about-text__text">
-                     Компания <span>«ПРОСТО ЧИСТО»</span> – это команда профессионалов, над созданием которой мы
+
+                     Компания <span class="about-text-span">«Клининг.UA»</span> – это команда профессионалов, над
+                     созданием которой мы
                      упорно
                      трудились
                      долгое
-                     время!
-                     Каждые полгода все наши сотрудники проходят тренинги,
-                     позволяющие повысить квалификацию и уровень знаний в связи с введением в работу новых
-                     чистящих
-                     средств
-                     и
-                     высокопрофильной техники.
-                     Вместе мы делаем большую работу, чтобы от первого Вашего звонка в компанию до завершения
-                     работ
-                     мастером
-                     Вы
-                     были
-                     довольны нашим сервисом и качеством оказанных услуг!
+                     время! <br><br>
+                     Мы выполняем весь сперт уборок. Работаем 7 дней в неделю 24 часа в сутки. Приедем в удобное для Вас
+                     время в городе и области! Вызов специалиста бесплатно.
+                  </div>
+                  <div class="types-jobs">
+                     <div class="types-jobs__title"> Виды работ: </div>
+                     <ul class="types-jobs__list">
+                        <li class="types-jobs__item _icon-hand"><span>регулярные уборки</span>
+                        </li>
+                        <li class="types-jobs__item _icon-hand"><span>генеральные уборки</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>после строительные уборки</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>мойка окон с двух сторон</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>мойка фасадов</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>чистка лифтовых кабин, дверей</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>уборка после пожаров</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>уборка территории</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>уборка подвалов</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>химчистка мебели</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>химчистка пола</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>химчистка ковролина и ковровых покрытий</span>
+                        </li>
+                     </ul>
+                     <div class="types-jobs__text">Наши менеджеры ответят на все вопросы.</div>
                   </div>
                </div>
             </div>
