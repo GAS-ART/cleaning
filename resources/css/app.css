@@ -38,7 +38,8 @@ body {
    -ms-text-size-adjust: 100%;
    -moz-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
-   font-family: "lora";
+   font-family: "Calibri";
+   /*font-family: "lora";*/
 }
 
 input,
@@ -88,6 +89,52 @@ h6 {
 }
 
 /*--------------------*/
+
+/*ШРИФТ*/
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff");
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri-BoldItalic.woff2") format("woff2"), url("../fonts/Calibri-BoldItalic.woff") format("woff");
+   font-weight: 400;
+   font-style: italic;
+}
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri-Italic.woff2") format("woff2"), url("../fonts/Calibri-Italic.woff") format("woff");
+   font-weight: 400;
+   font-style: italic;
+}
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff");
+   font-weight: 300;
+   font-style: normal;
+}
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri-LightItalic.woff2") format("woff2"),
+      url("../fonts/Calibri-LightItalic.woff") format("woff");
+   font-weight: 400;
+   font-style: italic;
+}
+@font-face {
+   font-family: Calibri;
+   font-display: swap;
+   src: url("../fonts/Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+   font-weight: 400;
+   font-style: normal;
+}
+/*ШРИФТ*/
 
 /*Иконочный шрифт*/
 @font-face {
@@ -362,7 +409,7 @@ svg {
    background-repeat: no-repeat;
    height: 550px;
    background-size: contain;
-   margin: 0 0 30px 0;
+   margin: 0 0 30px -200px;
    position: relative;
    background-position: center;
 }
@@ -1166,7 +1213,8 @@ video {
    padding: 20px 0;
 }
 .contacts-title h4 {
-   font-weight: 500;
+   font-weight: 600;
+   font-size: 28px;
 }
 .contacts-phone {
    margin: 0 0 20px 0;
@@ -1180,8 +1228,9 @@ video {
    margin: 2px 0 0 -20px;
    transform: rotate(20deg);
 }
-.contacts-phone a {
-   font-size: 18px;
+.contacts-phone a,
+.contacts-email a {
+   font-size: 22px;
    letter-spacing: 3px;
    color: #fff;
 }
@@ -1214,14 +1263,14 @@ video {
 .types-jobs__list {
    margin: 0 0 20px 0;
    color: darkblue;
-   width: 100%;
+   min-width: 655px;
+   transform: translate(30%, 0px);
 }
 .types-jobs__item {
    padding: 15px;
    font-size: 18px;
    font-style: italic;
    cursor: default;
-   text-align: center;
 }
 .types-jobs__item span {
    transition: font-size 0.5s ease 0s;
@@ -1240,6 +1289,10 @@ video {
 }
 
 @media (max-width: 1025px) {
+   .types-jobs__list {
+      min-width: unset;
+      transform: translate(0, 0);
+   }
    .types-jobs__item {
       text-align: left;
       transition: all 0.5 ease 0s;
@@ -1364,7 +1417,7 @@ video {
 
    .burger:after {
       content: "МЕНЮ";
-      margin: 30px 0 0 9px;
+      margin: 30px 0 0 13.5px;
       color: darkblue;
       font-size: 18px;
    }
@@ -1636,7 +1689,7 @@ video {
    }
 
    .burger:after {
-      margin: 16px 0 0 1px;
+      margin: 16px 0 0 3.5px;
       font-size: 13px;
    }
 

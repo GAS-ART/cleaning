@@ -12,6 +12,9 @@
                <div class="contacts-phone">
                   <a href="tel:0636642636">(063)664-26-36</a>
                </div>
+               <div class="contacts-email">
+                <a href="mailto:dnepr.jc@gmail.com">dnepr.jc@gmail.com</a>
+               </div>
             </div>
          </div>
       </div>
