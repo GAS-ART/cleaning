@@ -15,12 +15,16 @@ window.onload = function () {
    const buttonNone = document.querySelector('.button-none');
    const readMore = document.querySelectorAll('.dots-read-more');
    const readLess = document.querySelectorAll('.dots-read-less');
-   const showText = document.querySelectorAll('.show-text');
 
    readMore.forEach(function (item) {
       item.addEventListener('click', function () {
          item.classList.add('inactive');
          item.nextElementSibling.classList.add('active');
+         let eventName = item.dataset.eventName;
+         let currentPage = item.dataset.page;
+         gtag('event', eventName, {
+            'Категория': currentPage,
+         });
       })
    });
 
