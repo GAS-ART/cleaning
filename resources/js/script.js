@@ -13,6 +13,23 @@ window.onload = function () {
    const buttonAfter = document.querySelector('.button-after');
    const buttonBefore = document.querySelector('.button-before');
    const buttonNone = document.querySelector('.button-none');
+   const readMore = document.querySelectorAll('.dots-read-more');
+   const readLess = document.querySelectorAll('.dots-read-less');
+   const showText = document.querySelectorAll('.show-text');
+
+   readMore.forEach(function (item) {
+      item.addEventListener('click', function () {
+         item.classList.add('inactive');
+         item.nextElementSibling.classList.add('active');
+      })
+   });
+
+   readLess.forEach(function (item) {
+      item.addEventListener('click', function () {
+         item.closest('.show-text').classList.remove('active');
+         item.parentNode.parentNode.firstElementChild.classList.remove('inactive');
+      })
+   });
 
    callOderButton[0].classList.add('animate');
 

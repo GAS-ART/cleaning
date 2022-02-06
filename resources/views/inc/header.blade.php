@@ -123,7 +123,7 @@
                   </div>
                </nav>
                <div class="header-logo">
-                  <a href="{{ route('index') }}"><img src="{{ asset('img/icons/logo.png') }}" alt=""></a>
+                  <a href="{{ route('index') }}"><img src="{{ asset('img/icons/logo.svg') }}" alt=""></a>
                </div>
                <div class="burger">
                   <span></span>

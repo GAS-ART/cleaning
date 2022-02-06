@@ -1813,3 +1813,77 @@ video {
       padding: 0 10px;
    }
 }
+
+.our-usefulness {
+   margin: 50px 0 0 0;
+   font-size: 20px;
+   color: darkblue;
+}
+.whom {
+   margin: 0 0 20px 0;
+   font-weight: 600;
+   font-size: 25px;
+   letter-spacing: 2px;
+}
+.our-usefulnes-item {
+   margin: 0 0 0 25px;
+}
+.our-usefulness-tittle {
+   margin: 35px 0 10px 15px;
+   font-style: italic;
+   font-size: 22px;
+   letter-spacing: 2px;
+}
+.our-usefulness .our-usefulnes-item:nth-child(2) .our-usefulness-tittle {
+   margin: 0px 0 10px 15px;
+}
+.our-usefulness-text {
+   letter-spacing: 1px;
+   text-align: justify;
+   line-height: 1.2;
+}
+.show-text {
+   display: none;
+}
+.show-text.active {
+   display: inline;
+}
+.dots-read-more,
+.dots-read-less {
+   cursor: pointer;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+.dots-read-more.inactive {
+   display: none;
+}
+.stages-block-tittle {
+   padding: 35px 0 35px 0;
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 3px;
+   color: darkblue;
+   font-weight: 700;
+}
+.stages-block-color {
+   background: linear-gradient(#94c5ed, #2b559d);
+   color: #fff;
+}
+@media (max-width: 950px) {
+   .about-text-service {
+      margin: 150px 0 0 0;
+   }
+   .our-usefulnes-item {
+      margin: 0;
+   }
+   .our-usefulness-text {
+      letter-spacing: 1px;
+      text-align: left;
+      line-height: 1.4;
+   }
+}
+@media (max-width: 320px) {
+   .about-text-service {
+      margin: 50px 0 0 0;
+   }
+}
