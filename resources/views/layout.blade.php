@@ -23,10 +23,10 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') . '?_v=1' }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') . '?_v=2' }}">
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="{{ asset('js/slick.min.js') }}"></script>
-   <script src="{{ asset('js/script.js') }}"></script>
+   <script src="{{ asset('js/script.js') . '?_v=2' }}"></script>
    <!-- Global site tag (gtag.js) - Google Ads: 957048846 -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-957048846"></script>
    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-957048846');</script>
