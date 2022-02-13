@@ -16,6 +16,21 @@ window.onload = function () {
    const readMore = document.querySelectorAll('.dots-read-more');
    const readLess = document.querySelectorAll('.dots-read-less');
 
+   const messengersContacts = document.querySelector('.messengers-contacts');
+   const contacts = document.querySelectorAll('.contacts');
+   contacts.forEach((item) => {
+      item.addEventListener('click', function () {
+         messengersContacts.classList.toggle('active');
+      });
+   }
+   )
+
+   document.addEventListener('click', (e) => {
+      if (!e.target.closest('.messengers')) {
+         messengersContacts.classList.remove('active');
+      }
+   })
+
    readMore.forEach(function (item) {
       item.addEventListener('click', function () {
          item.classList.add('inactive');

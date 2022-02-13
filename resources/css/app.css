@@ -1887,3 +1887,70 @@ video {
       margin: 50px 0 0 0;
    }
 }
+
+.messengers-contacts {
+   position: absolute;
+   top: -200px;
+   left: -50px;
+   z-index: 105;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   background-color: #addae6;
+   width: 250px;
+   transition: transform 0.6s ease 0s;
+   transform: translate(200%, 0);
+}
+.messengers-contacts.active {
+   transform: translate(0%, 0);
+}
+.contacts-viber,
+.contacts-telegram {
+   position: relative;
+   width: 35px;
+   height: 35px;
+   font-size: 22px;
+   left: 45px;
+}
+.contacts-viber {
+   margin: 20px 0;
+}
+.contacts-email {
+   position: relative;
+   left: 0px;
+}
+.contacts-viber img,
+.contacts-telegram img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   left: -45px;
+   top: -5px;
+}
+.contacts {
+   color: darkblue;
+   font-size: 20px;
+}
+
+.messengers-contacts .contacts-phone a,
+.messengers-contacts .contacts-email a,
+.contacts-viber a,
+.contacts-telegram a {
+   color: darkblue;
+}
+.messengers-contacts .contacts-phone {
+   position: relative;
+   left: 25px;
+}
+.messenger-icon,
+.messenger-text {
+   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+   .messengers-contacts {
+      top: -212px;
+      left: -190px;
+   }
+}
