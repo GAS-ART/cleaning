@@ -30,12 +30,17 @@
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
-                  Частные лица:
+                  <div class="our-usefulness-tittle-text">
+                     Частные лица:
+                  </div>
+                  <div data-event-name="Частные_лица" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
                </div>
                <div class="our-usefulness-text">
                   Используем гипоаллергенный средства при работе. Наши средства сделаны на органической основе, что
-                  позволяет<span data-event-name="Частные_лица" data-page="Химчистка" class="dots-read-more">...
-                     [ЧИТАТЬ БОЛЬШЕ]</span>
+                  позволяет<span class="dots-read-more">...</span>
                   <span class="show-text"> им
                      исчезнуть
                      через сутки. По мимо общих загрязнений, убираем пятна
@@ -44,19 +49,24 @@
                      <br><br>
                      Так же, мы можем быть вам полезны с другими видами работ, генеральная уборка, уборка после ремонта,
                      убрать плесень, запахи, мойка окон. За более детально информации прошу обращаться нашим
-                     менеджерам<span class="dots-read-less"> [СВЕРНУТЬ ТЕКСТ]</span>
+                     менеджерам.
                   </span>
 
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
-                  Рестораны:
+                  <div class="our-usefulness-tittle-text">
+                     Рестораны:
+                  </div>
+                  <div data-event-name="Рестораны" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+                  </div>
                </div>
+
                <div class="our-usefulness-text">
                   Выполняем работу в ночное или удобное для вас время, рассчитываем процесс работы при открытии
-                  заведения, мебель<span data-event-name="Рестораны" data-page="Химчистка" class="dots-read-more">...
-                     [ЧИТАТЬ БОЛЬШЕ]</span>
+                  заведения, мебель<span class="dots-read-more">...</span>
                   <span class="show-text"> была
                      готова к использованию. Работаем с любой формой оплат. По мимо общих
                      загрязнений удаляем, пятна от жира, вино, кофе, краску, чернила. Можем работать по договору на
@@ -65,54 +75,70 @@
                      Так же, мы можем быть вам полезны с другими видами работ: мойка фасада, окон, химчистка пола,
                      обезжиривание кухни, ген уборка, удаление запахов. За более детально информации прошу обращаться
                      нашим
-                     менеджерам.<span class="dots-read-less"> [СВЕРНУТЬ ТЕКСТ]</span>
+                     менеджерам.
                   </span>
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
-                  Отели:
+                  <div class="our-usefulness-tittle-text">
+                     Отели:
+                  </div>
+                  <div data-event-name="Отели" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
                </div>
+
                <div class="our-usefulness-text">
                   Выполняем работу в ночное или удобное время для вас. Выполняем химчистку матрасов, ковролина, ковровых
-                  дорожек<span data-event-name="Отели" data-page="Химчистка" class="dots-read-more">... [ЧИТАТЬ
-                     БОЛЬШЕ]</span> <span class="show-text">,
+                  дорожек<span class="dots-read-more">...</span> <span class="show-text">,
                      кресел, диванов, стульев. Химчистка пола. Работаем с любой формой оплат.
                      <br><br>
                      Так же, мы можем быть вам полезны с другими видами работ. Мойка окон, фасада, генеральная уборка
                      (обеспыливание стен, потолка), уборка нестандартных помещений.
                      <br><br>
-                     За более детально информации прошу обращаться нашим менеджерам<span class="dots-read-less">...
-                        [СВЕРНУТЬ ТЕКСТ]</span>
+                     За более детально информации прошу обращаться нашим менеджерам.
                   </span>
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
-                  Офисные помещения:
+                  <div class="our-usefulness-tittle-text">
+                     Офисные помещения:
+                  </div>
+                  <div data-event-name="Офисы" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
                </div>
+
                <div class="our-usefulness-text">
                   Выполняем работу в ночное или удобное время для вас. Выполняем химчистку кресел, диванов, ковролина,
-                  орг. Техники<span data-event-name="Офисы" data-page="Химчистка" class="dots-read-more">... [ЧИТАТЬ
-                     БОЛЬШЕ]</span> <span class="show-text">.
+                  орг. Техники<span class="dots-read-more">...</span> <span class="show-text">.
                      Работаем с любой формой оплат.
                      <br><br>
                      Так же, мы можем быть вам полезны с другими видами работ: мойка фасада, окон, химчистка пола,
                      удаления
                      запахов (например табак), ген уборка (обеспыливание стен, потолка),. За более детальной информацией
-                     прошу обращаться к нашим менеджерам<span class="dots-read-less"> [СВЕРНУТЬ ТЕКСТ]</span>
+                     прошу обращаться к нашим менеджерам.
                   </span>
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
-                  Торговые комплексы:
+                  <div class="our-usefulness-tittle-text">
+                     Торговые комплексы:
+                  </div>
+                  <div data-event-name="Торговые_комплексы" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
                </div>
+
                <div class="our-usefulness-text">
                   Выполняем работу в ночное или удобное время для вас. Работаем с любой формой оплат. Выполняем
-                  химчистку кресел,<span data-event-name="Торговые_комплексы" data-page="Химчистка"
-                     class="dots-read-more">... [ЧИТАТЬ
-                     БОЛЬШЕ]</span> <span class="show-text">
+                  химчистку кресел,<span class="dots-read-more">...</span> <span class="show-text">
                      диванов, ковролина.
                      <br><br>
                      Так же, мы можем быть вам полезны с другими видами работ: мойка фасада, окон, вывески, химчистка
@@ -120,7 +146,7 @@
                      уборка после пожара, наводнения, удаления запахов (например табака), ген уборка (обеспыливание
                      стен,
                      потолка), уборка нестандартных помещении. За более детально информации прошу обращаться нашим
-                     менеджерам<span class="dots-read-less"> [СВЕРНУТЬ ТЕКСТ]</span>
+                     менеджерам.
                   </span>
                </div>
             </div>

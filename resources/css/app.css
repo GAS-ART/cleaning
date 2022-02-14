@@ -1833,6 +1833,54 @@ video {
    font-style: italic;
    font-size: 22px;
    letter-spacing: 2px;
+   display: flex;
+   justify-content: space-between;
+}
+.our-usefulness-tittle-btn {
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+   position: relative;
+   transition: background 0.4s, transform 0.4s 0.4s;
+   overflow: hidden;
+   border-radius: 50%;
+}
+.our-usefulness-tittle-btn:hover {
+   background-color: #efebfe;
+}
+.our-usefulness-tittle-btn::before {
+   content: "";
+   width: 14px;
+   height: 2px;
+   background: #5a30f0;
+   display: block;
+   transform-origin: center;
+   position: absolute;
+   top: 14px;
+   left: 8px;
+   transition: transform 0.4s;
+   transform: rotate(90deg);
+   cursor: pointer;
+}
+
+.our-usefulness-tittle-btn::after {
+   content: "";
+   width: 14px;
+   height: 2px;
+   background: #5a30f0;
+   display: block;
+   transform-origin: center;
+   position: absolute;
+   top: 14px;
+   left: 8px;
+   transition: transform 0.4s;
+   cursor: pointer;
+}
+.our-usefulness-tittle-btn.active::before {
+   transform: rotate(135deg);
+}
+.our-usefulness-tittle-btn.active::after {
+   transform: rotate(45deg);
 }
 .our-usefulness .our-usefulnes-item:nth-child(2) .our-usefulness-tittle {
    margin: 0px 0 10px 15px;
@@ -1850,7 +1898,6 @@ video {
 }
 .dots-read-more,
 .dots-read-less {
-   cursor: pointer;
    font-weight: 600;
    text-transform: uppercase;
 }

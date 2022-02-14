@@ -13,8 +13,25 @@ window.onload = function () {
    const buttonAfter = document.querySelector('.button-after');
    const buttonBefore = document.querySelector('.button-before');
    const buttonNone = document.querySelector('.button-none');
-   const readMore = document.querySelectorAll('.dots-read-more');
-   const readLess = document.querySelectorAll('.dots-read-less');
+   const readMoreBtn = document.querySelectorAll('.our-usefulness-tittle-btn')
+
+   readMoreBtn.forEach((item) => {
+      item.addEventListener('click', function (e) {
+         e.target.classList.toggle('active');
+         let isFirstClick = item.dataset.firstClick;
+         e.target.closest('.our-usefulness-tittle').nextElementSibling.firstElementChild.classList.toggle('inactive');
+         let showText = e.target.closest('.our-usefulness-tittle').nextElementSibling.lastElementChild;
+         $(showText).slideToggle(100);
+         if (isFirstClick == "true") {
+            let eventName = item.dataset.eventName;
+            let currentPage = item.dataset.page;
+            gtag('event', eventName, {
+               'Категория': currentPage,
+            });
+            item.dataset.firstClick = false;
+         }
+      })
+   });
 
    const messengersContacts = document.querySelector('.messengers-contacts');
    const contacts = document.querySelectorAll('.contacts');
@@ -30,25 +47,6 @@ window.onload = function () {
          messengersContacts.classList.remove('active');
       }
    })
-
-   readMore.forEach(function (item) {
-      item.addEventListener('click', function () {
-         item.classList.add('inactive');
-         item.nextElementSibling.classList.add('active');
-         let eventName = item.dataset.eventName;
-         let currentPage = item.dataset.page;
-         gtag('event', eventName, {
-            'Категория': currentPage,
-         });
-      })
-   });
-
-   readLess.forEach(function (item) {
-      item.addEventListener('click', function () {
-         item.closest('.show-text').classList.remove('active');
-         item.parentNode.parentNode.firstElementChild.classList.remove('inactive');
-      })
-   });
 
    callOderButton[0].classList.add('animate');
 
