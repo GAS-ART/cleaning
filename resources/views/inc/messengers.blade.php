@@ -38,9 +38,9 @@
          <div class="messenger-icon contacts _phone-phone">
           
          </div>
-         <div class="messenger-text contacts">
+       <!--  <div class="messenger-text contacts">
             КОНТАКТЫ
-         </div>
+         </div> -->
       </div>
    </div>
 </div>
