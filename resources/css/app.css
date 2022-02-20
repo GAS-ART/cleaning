@@ -612,7 +612,13 @@ svg {
    height: 50px;
 }
 .messenger-icon::before {
-   font-size: 30px;
+   font-size: 45px;
+}
+
+@media (max-width: 768px) {
+   .messenger-icon::before {
+      font-size: 30px;
+   }
 }
 
 .messenger-text {
