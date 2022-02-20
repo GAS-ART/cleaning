@@ -166,6 +166,35 @@ h6 {
 ._icon-hand:before {
    content: "\e900";
 }
+
+@font-face {
+   font-family: "phone";
+   src: url("../fonts/icons/phone.ttf?94hg04") format("truetype"),
+      url("../fonts/icons/phone.woff?94hg04") format("woff"), url("../fonts/icons/phone.svg?94hg04#phone") format("svg");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="_phone-"]::before,
+[class*=" _phone-"]::before {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "phone" !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+._phone-phone:before {
+   content: "\e900";
+}
 /*Иконочный шрифт*/
 
 .container {
@@ -582,6 +611,9 @@ svg {
    width: 50px;
    height: 50px;
 }
+.messenger-icon::before {
+   font-size: 30px;
+}
 
 .messenger-text {
    margin: 10px 0 0 0;
@@ -763,7 +795,7 @@ svg {
    letter-spacing: 3px;
    color: darkblue;
    margin: 0 0 30px 0;
-   font-weight: 500;
+   font-weight: 600;
 }
 .servise__row {
    display: flex;
@@ -936,7 +968,6 @@ video {
 .stages-item-description p {
    font-size: 16px;
    letter-spacing: 1.6px;
-   font-style: italic;
 }
 
 .work-examples {
@@ -1269,7 +1300,6 @@ video {
 .types-jobs__item {
    padding: 15px;
    font-size: 18px;
-   font-style: italic;
    cursor: default;
 }
 .types-jobs__item span {
@@ -1830,7 +1860,6 @@ video {
 }
 .our-usefulness-tittle {
    margin: 35px 0 10px 15px;
-   font-style: italic;
    font-size: 22px;
    letter-spacing: 2px;
    display: flex;

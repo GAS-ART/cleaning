@@ -35,8 +35,8 @@
                <a href="tg://resolve?domain=Alexklining">Написать</a>
             </div>
          </div>
-         <div class="messenger-icon contacts">
-            <img src="{{ asset('img/icons/contacts.jpg') }}" alt="">
+         <div class="messenger-icon contacts _phone-phone">
+          
          </div>
          <div class="messenger-text contacts">
             КОНТАКТЫ
