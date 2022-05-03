@@ -32,21 +32,20 @@ window.onload = function () {
          }
       })
    });
-
-   const messengersContacts = document.querySelector('.messengers-contacts');
-   const contacts = document.querySelectorAll('.contacts');
-   contacts.forEach((item) => {
-      item.addEventListener('click', function () {
-         messengersContacts.classList.toggle('active');
-      });
-   }
-   )
+   // Выезд контактов справой стороны
+   /*  const messengersContacts = document.querySelector('.messengers-contacts');
+     const contacts = document.querySelectorAll('.contacts');
+     contacts.forEach((item) => {
+        item.addEventListener('click', function () {
+           messengersContacts.classList.toggle('active');
+        });
+     });
 
    document.addEventListener('click', (e) => {
       if (!e.target.closest('.messengers')) {
          messengersContacts.classList.remove('active');
       }
-   })
+   })*/
 
    callOderButton[0].classList.add('animate');
 
@@ -140,6 +139,33 @@ window.onload = function () {
       animate = animation();
    }
    /*POPUP*/
+
+   /*POPUP-CONTACTS*/
+   const popupContats = document.getElementById('popup-contacts');
+   const popupContatsCloseIcon = document.querySelector('.close-popup-contacts');
+   const popupContatsBtn = document.querySelector('.messenger-icon');
+
+   popupContatsBtn.addEventListener('click', function (e) {
+      popupContats.classList.add('open');
+      bodyLock.classList.add("lock");
+      popupContats.addEventListener("click", function (e) {
+         if (!e.target.closest('.popup__content-contacts')) {
+            popupContatsClose();
+         }
+      });
+      e.preventDefault();
+   });
+
+   popupContatsCloseIcon.addEventListener("click", function (e) {
+      popupContatsClose();
+      e.preventDefault();
+   });
+
+   function popupContatsClose() {
+      popupContats.classList.remove('open');
+      bodyLock.classList.remove("lock");
+   }
+   /*POPUP-CONTACTS*/
 
    /*BURGER*/
    $('.burger').click(function () {

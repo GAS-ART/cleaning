@@ -2036,3 +2036,106 @@ video {
       left: -190px;
    }
 }
+
+.popup__content-contacts{
+   padding: 0px;
+   width: 500px;
+   height: 500px;
+   background-color: unset;
+   background-image: url('https://xn--c1ajagfnb.dp.ua/img/marker_1.png');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   justify-content: flex-start;
+}
+.popup__text-contacts{
+   display: flex;
+   flex-direction: column;
+}
+.popup__title-contacts h4{
+   position: relative;
+   color: darkblue;
+   margin-top: 100px;
+}
+.popup__contacts-phone .contacts-phone a, .contacts-email a{
+      color: darkblue;
+}
+
+.popup__contacts-phone{
+   display: flex;
+   margin: 0px;
+}
+.popup__contacts-mesendgers{
+display: flex;
+align-items: center;
+}
+.popup__contacts-phone .contacts-phone:not(:last-child){
+   margin-right: 40px;
+   margin-left: 20px;
+}
+.popup__contacts-phone{
+   margin-top: 15px;
+}
+.contacts-viber{
+   margin-right: 20px;
+   left: 60px;
+}
+.contacts-telegram{
+   left: 230px;
+}
+.contacts-email{
+   margin-left: 80px;
+   margin-top: 30px;
+}
+@media (max-width: 500px) {
+   .popup__title-contacts{
+      padding: 0;
+   }
+   .popup__title-contacts h4{
+      margin-top: 40px;
+   }
+   .popup__content-contacts{
+      width: 360px;
+      height: 360px;
+      background-size: contain;
+   }
+   .popup__contacts-phone .contacts-phone:not(:last-child){
+      margin-right: 0px;
+      margin-left: 0px;
+   }
+   .popup__contacts-phone{
+      order: 3;
+      flex-direction: column;
+      left: 0;
+      margin: 0;
+      align-items: center;
+   }
+   .contacts-phone::before{
+      display: none;
+   }
+   .popup__contacts-mesendgers{
+      order: 1;
+      flex-direction: column;
+      left: 0;
+      margin: 0 0 0px 0;
+      align-items: center;
+   }
+   .contacts-viber{
+      margin-right: 0px;
+      left: 0px;
+   }
+   .contacts-telegram{
+      left: 0px;
+   }
+   .contacts-email{
+      order: 2;
+      margin-left: 0px;
+      margin-top:0px;
+      margin-bottom: 20px;
+   }
+}
+@media (max-width: 350px) {
+   
+
+   
+}
