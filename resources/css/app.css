@@ -2059,6 +2059,7 @@ video {
 }
 .popup__contacts-phone .contacts-phone a, .contacts-email a{
       color: darkblue;
+      font-weight: 600;
 }
 
 .popup__contacts-phone{
@@ -2133,6 +2134,9 @@ align-items: center;
       margin-top:0px;
       margin-bottom: 20px;
    }
+   .popup__contacts-phone .contacts-phone a, .contacts-email a{
+      font-weight: 500;
+}
 }
 @media (max-width: 350px) {
    
