@@ -1266,7 +1266,8 @@ video {
    transform: rotate(20deg);
 }
 .contacts-phone a,
-.contacts-email a {
+.contacts-email a,
+.contacts-email-footer a {
    font-size: 22px;
    letter-spacing: 3px;
    color: #fff;
