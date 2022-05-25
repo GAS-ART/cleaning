@@ -33,7 +33,7 @@
                   <div class="our-usefulness-tittle-text">
                      Частные лица:
                   </div>
-                  <div data-event-name="Частные_лица" data-page="Химчистка" data-first-click="true"
+                  <div data-event-name="Частные_лица" data-page="Окна" data-first-click="true"
                      class="our-usefulness-tittle-btn">
 
                   </div>
@@ -60,7 +60,7 @@
                   <div class="our-usefulness-tittle-text">
                      Коммерческая недвижимость:
                   </div>
-                  <div data-event-name="Рестораны" data-page="Химчистка" data-first-click="true"
+                  <div data-event-name="Недвижимость" data-page="Окна" data-first-click="true"
                      class="our-usefulness-tittle-btn">
                   </div>
                </div>
@@ -98,7 +98,7 @@
                   <div class="our-usefulness-tittle-text">
                      Послестроительная мойка окон:
                   </div>
-                  <div data-event-name="Отели" data-page="Химчистка" data-first-click="true"
+                  <div data-event-name="Послестрой" data-page="Окна" data-first-click="true"
                      class="our-usefulness-tittle-btn">
 
                   </div>
