@@ -431,7 +431,8 @@ svg {
    font-size: 20px;
    text-align: center;
    color: darkblue;
-   letter-spacing: 3px;
+   letter-spacing: 1px;
+   line-height: 1.2;
 }
 .about-text__foto {
    background: url(../img/main_1.jpg), linear-gradient(to right, #94c5ed, #94c5ed);
@@ -938,11 +939,11 @@ video {
    max-width: 300px;
 }
 .stages-item-title h2 {
-   font-size: 18px;
-   font-weight: 600;
+   font-size: 22px;
+   font-weight: 400;
    letter-spacing: 2px;
    color: darkblue;
-   text-transform: uppercase;
+   /*text-transform: uppercase;*/
    min-height: 54px;
    display: flex;
    align-items: center;
@@ -972,8 +973,9 @@ video {
    margin: 20px 0 0 0;
 }
 .stages-item-description p {
-   font-size: 16px;
-   letter-spacing: 1.6px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   line-height: 1.2;
 }
 
 .work-examples {
@@ -1469,6 +1471,7 @@ video {
       transform: scale(0);
       transition: all 0.8s ease 0s;
       background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+      background-image: url('../img/header_menu.jpg');
       overflow: auto;
       position: fixed;
       top: 0;
@@ -1871,6 +1874,7 @@ video {
    letter-spacing: 2px;
    display: flex;
    justify-content: space-between;
+   text-decoration: underline;
 }
 .our-usefulness-tittle-btn {
    cursor: pointer;

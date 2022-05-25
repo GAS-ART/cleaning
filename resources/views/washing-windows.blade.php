@@ -15,11 +15,116 @@
 <main class="page">
 
    <div class="stages">
+
       <div class="container">
          <div class="stages-title">
             <h1 class="block-title">Мойка окон</h1>
          </div>
-         <div class="stages-block">
+         <div class="about-text__text about-text-service">
+            Компания <span class="about-text-span">«Клининг.UA»</span> – работаем в удобное время для вас. Наш опыт,
+            оборудование позволяет сделать работу быстро и качественно. Работаем 7 дней в неделю 24 часа в сутки.
+         </div>
+         <div class="our-usefulness">
+            <div class="whom">
+               Для кого можем быть полезны:
+            </div>
+            <div class="our-usefulnes-item">
+               <div class="our-usefulness-tittle">
+                  <div class="our-usefulness-tittle-text">
+                     Частные лица:
+                  </div>
+                  <div data-event-name="Частные_лица" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
+               </div>
+               <div class="our-usefulness-text">
+                  Для качественного выполнения работы требуется, профессиональна химия, специализированное оборудование.
+                  Наши специалисты<span class="dots-read-more">...</span>
+                  <span class="show-text">помогут вам сэкономить ваше время , делая свою работу быстро и качественно.
+                     Работаем в удобное время для вас. Оплата после выполнения работ.
+                     <br><br>
+                     Если на ваших окнах с одной или двух сторон : краска, монтажная пена, клей, скотч, силикон, цемент,
+                     побелка, водный налет и другое. Либо требуется снятие защитной пленки с окон, подоконников. Так же
+                     откосов, отливов, подоконники, ручки, рамы, петли. Закажите звонок или позвоните нашим менеджерам.
+                     <br><br>
+                     Так же, мы можем быть вам полезны с другими видами работ, химчистка мебели, нейтрализация запахов,
+                     генеральная уборка, уборка после ремонта, убрать плесень. За более детально информации прошу
+                     обратится к нашим менеджерам.
+                  </span>
+
+               </div>
+            </div>
+            <div class="our-usefulnes-item">
+               <div class="our-usefulness-tittle">
+                  <div class="our-usefulness-tittle-text">
+                     Коммерческая недвижимость:
+                  </div>
+                  <div data-event-name="Рестораны" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+                  </div>
+               </div>
+
+               <div class="our-usefulness-text">
+                  Выполняем как высотные работы, так и с помощью автовышек, лесов. Работаем с любой формой оплат<span
+                     class="dots-read-more">...</span>
+                  <span class="show-text"><br><br> Выполняем мойку:
+                     <br><br>
+                     - Жалюзи
+                     <br><br>
+                     - Фасады
+                     <br><br>
+                     - Террасы
+                     <br><br>
+                     - Мойка окон на высоте
+                     <br><br>
+                     - Остекления любого типа
+                     <br><br>
+                     - Вывески
+                     <br><br>
+                     - Логотипы
+                     <br><br>
+                     - Вы можете уточнить по поводу мойки других объектов
+                     <br><br>
+                     Так же, мы можем быть вам полезны с другими видами работ: химчистка мебели, химчистка пола,
+                     обезжиривание кухни, ген уборка, удаление запахов, после ремонта, поддерживающая уборка. За более
+                     детально информации вы можете обратиться к нашим менеджерам.
+                     Послестроительная мойка окон:
+                  </span>
+               </div>
+            </div>
+            <div class="our-usefulnes-item">
+               <div class="our-usefulness-tittle">
+                  <div class="our-usefulness-tittle-text">
+                     Послестроительная мойка окон:
+                  </div>
+                  <div data-event-name="Отели" data-page="Химчистка" data-first-click="true"
+                     class="our-usefulness-tittle-btn">
+
+                  </div>
+               </div>
+
+               <div class="our-usefulness-text">
+                  После ремонта на ваших окнах помимо строительной пыли может оставаться: краска, монтажная<span
+                     class="dots-read-more">...</span> <span class="show-text">,
+                     пена, клей, скотч, силикон, цемент, побелка, наклейки, герметика, водный налет. А так же снятие
+                     защитной пленки с окон, подоконников, откосов, отливов.
+                     <br><br>
+                     Работаем с любой формой оплат
+                     <br><br>
+                     Так же, мы можем быть вам полезны с другими видами работ: химчистка мебели, химчистка пола,
+                     обезжиривание кухни, ген уборка, удаление запахов, после ремонта, поддерживающая уборка, ген уборка
+                     (обеспыливание стен, потолка). За более детально информации вы можете обратиться к нашим
+                     менеджерам.
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="stages-block stages-block-color">
+         <div class="container">
+            <div class="stages-block-tittle">ЭТАПЫ РАБОТ:</div>
             <div class="stages-row">
                <div class="stages-item">
                   <div class="stages-item-row">
@@ -105,6 +210,9 @@
                </div>
             </div>
          </div>
+      </div>
+
+      <div class="container">
          <div class="call-order">
             <div class="button-call-order">
                <a href="#" class="call-oder-button">заказать звонок</a>
