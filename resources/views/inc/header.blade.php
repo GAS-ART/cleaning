@@ -5,9 +5,9 @@
                <nav class="header-menu">
                   <div class="menu-body">
                      <ul class="menu-list ">
-                        <li> <a href="{{ route('index') }}" class="blob-btn @yield('main')">главная</a></li>
+                        <li> <a href="#" class="blob-btn @yield('main')">главная</a></li>
                         <li>
-                           <a href="{{ route('dry-cleaning') }}" class="blob-btn @yield('dryCleaning')">
+                           <a href="#" class="blob-btn @yield('dryCleaning')">
                               Химчистка <br> Мебели
                               <span class="blob-btn__inner">
                                  <span class="blob-btn__blobs">
@@ -35,7 +35,7 @@
                         </li>
                         <li>
 
-                           <a href="{{ route('washing-windows') }}" class="blob-btn @yield('washingWindows')">
+                           <a href="#" class="blob-btn @yield('washingWindows')">
                               мойка <br> окон
                               <span class="blob-btn__inner">
                                  <span class="blob-btn__blobs">
@@ -65,7 +65,7 @@
                      <ul class="menu-list ">
                         <li>
 
-                           <a href="{{ route('spring-cleaning') }}" class="blob-btn @yield('springCleaning')">
+                           <a href="#" class="blob-btn @yield('springCleaning')">
                               Генеральная<br> уборка
                               <span class="blob-btn__inner">
                                  <span class="blob-btn__blobs">
@@ -93,7 +93,7 @@
                         </li>
                         <li>
 
-                           <a href="{{ route('post-construction-cleaning') }}" class="blob-btn @yield('postConstructionCleaning')">
+                           <a href="#" class="blob-btn @yield('postConstructionCleaning')">
                               Послестроительная<br> уборка
                               <span class="blob-btn__inner">
                                  <span class="blob-btn__blobs">
@@ -117,16 +117,20 @@
                                  </filter>
                               </defs>
                            </svg>
-
+S
                         </li>
                      </ul>
                   </div>
                </nav>
                <div class="header-logo">
-                  <a href="{{ route('index') }}"><img src="{{ asset('img/icons/logo2.png') }}" alt="logo"></a>
+                  <a href="#"><img src="{{ asset('img/icons/logo2.png') }}" alt="logo"></a>
                </div>
                <div class="burger">
                   <span></span>
+               </div>
+               <div class="header-languages">
+                  <div class="header-languages-ua"><a href="#">UA</a></div>
+                  <div class="header-languages-ru"><a href="#">RU</a></div>
                </div>
             </div>
          </header>

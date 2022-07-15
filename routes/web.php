@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,8 +13,28 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/locale/{locale}',  'App\Http\Controllers\LanguagesController@changeLocale')->name('locale');
 
-Route::get('/', function () { return view('home');})->name('index');
+Route::get('/', function () {App::setLocale('ua'); return view('home');})->name('index');
+Route::get('/ua', function () {App::setLocale('ua'); return  redirect('/');});
+
+Route::get('/{locale}', function ($locale) {
+   if (! in_array($locale, ['ua', 'ru'])) { 
+
+      abort(404);
+
+   } else if ($locale == 'ua') {
+
+      App::setLocale('ua');
+      return view('home');
+
+   } else if ($locale == 'ru') {
+
+    App::setLocale('ru');
+    return view('home');
+
+ }
+   })->name('index');
 Route::get('/Главная', function () {return view('home');})->name('home');
 Route::get('/Химчистка', function () {return view('dry-cleaning');})->name('dry-cleaning');
 Route::get('/Мойка_окон', function () {return view('washing-windows');})->name('washing-windows');

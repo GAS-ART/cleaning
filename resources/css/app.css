@@ -2143,8 +2143,49 @@ align-items: center;
       font-weight: 500;
 }
 }
-@media (max-width: 350px) {
+.header-languages {
+   position: absolute;
+   right: 50px;
+   top: 20px;
+   display: flex;
    
-
-   
+}
+.header-languages a{
+   color: #0505a9;
+   font-size: 16px;
+   font-weight: bold;
+}
+.header-languages-ua {
+   margin-right: 20px;
+   background-color: #ffffff;
+}
+.header-languages-ru {
+   background-color: #ffffff;
+}
+@media (max-width: 1000px) {
+   .header-row{
+      width: 100%;
+   }
+   .header-languages {
+      position: fixed;
+      z-index: 100;
+      top: 70px;
+      right: 57px;
+   }
+}
+@media (max-width: 414px){
+   .header-languages {
+      right: 37px;
+   }
+}
+@media (max-width: 375px){
+   .header-languages {
+      right: 27px;
+   }
+}
+@media (max-width: 320px){
+   .header-languages {
+      top: 10px;
+      right: 7px;
+   }
 }

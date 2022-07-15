@@ -1,11 +1,4 @@
-@extends('layout')
-@section('ogTitle','Клининг сервис :: ПРОСТО ЧИСТО')
-@section('ogDescription','Профессиональная уборка квартир, домов, офисов, ресторанов и химчистка мебели. Новейшее
-оборудование и органическая химия')
-@section('title','ПРОСТО ЧИСТО - Клининговая компания в Днепре')
-@section('main','active')
 
-@section('content')
 <main class="page">
    <div class="main-screen">
 
@@ -195,4 +188,3 @@
       </div>
    </div>
 </main>
-@endsection
