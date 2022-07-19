@@ -2,7 +2,8 @@
 <?php
 
 return [
-   'another'=>'ru',
+   'ua'=>'ua',
+   'ru'=>'ru',
    'current'=>'ua',
 ]
 

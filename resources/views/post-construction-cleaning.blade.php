@@ -1,6 +1,6 @@
 @extends('layout')
-@section('ogTitle','УБОРКА ПОСЛЕСТРОЯ :: ПРОСТО ЧИСТО')
-@section('ogDescription','Профессиональная послестроительная уборка в Днепре.')
+@section('ogTitle', __('title.build.ogTitle'))
+@section('ogDescription', __('title.build.ogDescription'))
 @section('ogVideo')
 <meta property="og:video" content="https://www.xn--c1ajagfnb.dp.ua/img/gif/old/8.mp4" />
 <meta property="og:video:secure_url" content="https://www.xn--c1ajagfnb.dp.ua/img/gif/old/8.mp4" />
@@ -8,7 +8,7 @@
 <meta property="og:video:width" content="360" />
 <meta property="og:video:height" content="200" />
 @endsection
-@section('title','ПРОСТО ЧИСТО - Послестроительная уборка в Днепре')
+@section('title', __('title.build.title'))
 @section('postConstructionCleaning','active')
 
 @section('content')
@@ -17,20 +17,19 @@
    <div class="stages">
       <div class="container">
          <div class="stages-title">
-            <h1 class="block-title">Послестроительная уборка</h1>
+            <h1 class="block-title">@lang('build.title')</h1>
          </div>
          <div class="about-text__text about-text-service">
-            Компания <span class="about-text-span">«Клининг.UA»</span> – работаем в удобное время для вас. Наш опыт,
-            оборудование позволяет сделать работу быстро и качественно. Работаем 7 дней в неделю 24 часа в сутки.
+         @lang('build.description')
          </div>
          <div class="our-usefulness">
             <div class="whom">
-               Для кого можем быть полезны:
+            @lang('build.usful.title')
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Частные лица:
+                  @lang('build.usful.private')
                   </div>
                   <div data-event-name="Частные_лица (послестрой)" data-page="Послестроительная уборка"
                      data-first-click="true" class="our-usefulness-tittle-btn">
@@ -38,22 +37,13 @@
                   </div>
                </div>
                <div class="our-usefulness-text">
-                  После возведения и выполнения первоочередных внутренних работ, здания требуется черновая уборка. По
-                  завершению всех отделочных монтажных работ, требуется окончательная<span
-                     class="dots-read-more">...</span>
-                  <span class="show-text">послестроительная уборка, чтоб вы смоги перевозить вещи и не беспокоится что в
-                     шкафах, в каких-то местах есть пыль, краска или пятна на окнах. Мы рады быть Вам полезны.
-                     <br><br>
-                     Так же, мы можем вам предложить другие виды работ, химчистка мебели, ковролина, полов. Можем
-                     рассчитать еженедельные, ежемесячные, ежеквартальные уборку вашего дома или квартиры. За более
-                     детально информации прошу обращаться нашим менеджерам.
-                  </span>
+               @lang('build.usful.private_text')
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Коммерческая недвижимость:
+                  @lang('build.usful.industrial')
                   </div>
                   <div data-event-name="Недвижимость (послестрой)" data-page="Послестроительная уборка"
                      data-first-click="true" class="our-usefulness-tittle-btn">
@@ -61,14 +51,7 @@
                </div>
 
                <div class="our-usefulness-text">
-                  Выполняем уборку как во время строительства так и после отделочных работы, перед открытием или запуска
-                  завода, цеха, склад ресторана, офисное помещение. Работаем с<span class="dots-read-more">...</span>
-                  <span class="show-text">ген подрядными организациями.
-                     <br><br>
-                     Так же, мы можем вам предложить другие виды работ, химчистка мебели, ковролина, полов. Можем
-                     рассчитать еженедельные, ежемесячные, ежеквартальные уборку для, производственного цеха, склад,
-                     офисное помещение, ресторан. За более детально информации прошу обращаться нашим менеджерам.
-                  </span>
+               @lang('build.usful.industrial_text')
                </div>
             </div>
          </div>
@@ -76,12 +59,12 @@
 
       <div class="stages-block stages-block-color">
          <div class="container">
-            <div class="stages-block-tittle">ЭТАПЫ РАБОТ:</div>
+            <div class="stages-block-tittle">@lang('build.stages')</div>
             <div class="stages-row">
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Сбор мусора</h2>
+                        <h2>@lang('build.1')</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
                         <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-1.jpg') }}"
@@ -89,16 +72,14 @@
                            title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
-                        <p>Сбор и вывоз с объекта всего строительного мусора. Под этим подразумевается сбор в
-                           специальные мешки и контейнеры всего крупного и мелкого строительного мусора, который
-                           обязательно удаляется перед тем, как специалисты приступают к более тщательным процедурам</p>
+                        <p>@lang('build.1_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Мойка окон и стеклянных изделий</h2>
+                        <h2>@lang('build.2')</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
                         <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-2.jpg') }}"
@@ -106,16 +87,14 @@
                            title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
-                        <p>После ремонта на стеклах и зеркалах обычно остается большое количество защитных пленок,
-                           строительный скотч и прочие не самые приятные напоминания о прошедшем пыльном ремонте. Их
-                           необходимо тщательно и аккуратно удалить</p>
+                        <p>@lang('build.2_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Санузил</h2>
+                        <h2>@lang('build.3')</h2>
                      </div>
                      <div class="stages-item-img correct-img">
                         <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-3.jpg') }}"
@@ -123,16 +102,14 @@
                            title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
-                        <p>Приведение в порядок всех санузлов. Данный комплекс процедур выполняется с обязательной
-                           последующей образом и отдельно от всех видов работ. Убираем всю грязь со стен (капли краски,
-                           затирка, пыль и т.д.), окон, умывальников, туалетов, полов.</p>
+                        <p>@lang('build.3_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Удаление пыли</h2>
+                        <h2>@lang('build.4')</h2>
                      </div>
                      <div class="stages-item-img">
                         <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-4.jpg') }}"
@@ -140,16 +117,14 @@
                            title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
-                        <p>Очень важный этап клининговых процедур, причем после строительства обычными влажными тряпками
-                           здесь уже не обойтись. Специалисты обязательно используют профессиональное оборудование. В
-                           некоторых случаях возможно комбинировать сухую и влажную уборку пыли</p>
+                        <p>@lang('build.4_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Полы</h2>
+                        <h2>@lang('build.5')</h2>
                      </div>
                      <div class="stages-item-img img-center-picture">
                         <img src="{{ asset('img/stages/post_construction_cleaning/post_construction_cleaning-5.jpg') }}"
@@ -157,10 +132,7 @@
                            title="Уборка квартиры, дома, офиса после строительства">
                      </div>
                      <div class="stages-item-description">
-                        <p>Собираем всю пыль, влажная уборка. Удаление всех образовавшихся стойких загрязнений в плитки,
-                           швах и других напольных поверхностей. После ремонта их особенно много: капли лака, цементный
-                           раствор, замазка, а также различная строительная пена. При этом для каждого типа загрязнения
-                           имеется своя особая технология удаления, что обязательно учитывают специалисты.</p>
+                        <p>@lang('build.5_text')</p>
                      </div>
                   </div>
                </div>
@@ -170,7 +142,7 @@
       <div class="container">
          <div class="call-order">
             <div class="button-call-order">
-               <a href="#" class="call-oder-button">заказать звонок</a>
+               <a href="#" class="call-oder-button">@lang('call.contacts')</a>
             </div>
 
          </div>
@@ -180,7 +152,7 @@
    <div class="work-examples">
       <div class="container">
          <div class="work-examples-title">
-            <h2 class="block-title">выполненные работы</h2>
+            <h2 class="block-title">@lang('slider.works')</h2>
          </div>
          <div class="slider-work-examples">
             <div class="work-examples-item">
@@ -223,7 +195,7 @@
          <div class="work-examples-buttom">
             <div class="work-examples-buttom-row">
                <div class="button-after">
-                  ПОСЛЕ
+               @lang('slider.after')
                </div>
 
                <div class="button-none">X</div>

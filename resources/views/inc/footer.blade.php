@@ -4,7 +4,7 @@
          <div class="contacts">
             <div class="contaxt-row">
                <div class="contacts-title">
-                  <h4>контакты</h4>
+                  <h4>@lang('footer.contacts')</h4>
                </div>
                <div class="contacts-phone">
                <a href="tel:0976394515">(097)639-45-15</a>

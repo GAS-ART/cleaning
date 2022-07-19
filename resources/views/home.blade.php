@@ -1,8 +1,7 @@
 @extends('layout')
-@section('ogTitle','Клининг сервис :: ПРОСТО ЧИСТО')
-@section('ogDescription','Профессиональная уборка квартир, домов, офисов, ресторанов и химчистка мебели. Новейшее
-оборудование и органическая химия')
-@section('title','ПРОСТО ЧИСТО - Клининговая компания в Днепре')
+@section('ogTitle', __('title.main.ogTitle'))
+@section('ogDescription', __('title.main.ogDescription'))
+@section('title', __('title.main.title'))
 @section('main','active')
 
 @section('content')
@@ -22,24 +21,24 @@
                     @lang('home.company')
                   </div>
                   <div class="types-jobs">
-                     <div class="types-jobs__title"> Виды работ: </div>
+                     <div class="types-jobs__title"> @lang('home.works_types.title') </div>
                      <ul class="types-jobs__list">
-                        <li class="types-jobs__item _icon-hand"><span>регулярные уборки</span>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.1')</span>
                         </li>
-                        <li class="types-jobs__item _icon-hand"><span>генеральные уборки</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>после строительные уборки</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>мойка окон с двух сторон</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>мойка фасадов</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>чистка лифтовых кабин, дверей</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>уборка после пожаров</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>уборка территории</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>уборка подвалов</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>химчистка мебели</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>химчистка пола</span></li>
-                        <li class="types-jobs__item _icon-hand"><span>химчистка ковролина и ковровых покрытий</span>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.2')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.3')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.4')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.5')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.6')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.7')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.8')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.9')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.10')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.11')</span></li>
+                        <li class="types-jobs__item _icon-hand"><span>@lang('home.works_types.12')</span>
                         </li>
                      </ul>
-                     <div class="types-jobs__text">Наши менеджеры ответят на все вопросы.</div>
+                     <div class="types-jobs__text">@lang('home.questions')</div>
                   </div>
                </div>
             </div>
@@ -47,7 +46,7 @@
          </div>
          <div class="call-order">
             <div class="button-call-order">
-               <a href="#" class="call-oder-button">заказать звонок</a>
+               <a href="#" class="call-oder-button">@lang('call.contacts')</a>
             </div>
 
          </div>
@@ -57,13 +56,13 @@
    <div class="service">
       <div class="container">
          <div class="service-title">
-            <h2 class="block-title">наши услуги</h2>
+            <h2 class="block-title">@lang('home.services')</h2>
          </div>
          <div class="servise__row">
             <div class="servise__block">
                <div class="servise__item">
                   <div class="servise__item-title">
-                     <h3>мойка окон</h3>
+                     <h3>@lang('home.windows.title')</h3>
                   </div>
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
@@ -73,17 +72,16 @@
                         </video>
                      </div>
                      <div class="servise__item-gif-text">
-                        <p>Мойка окон не ограничиваться только стеклом, это рамы резинки подоконники и многое другое.
-                           Жми подробнее и изучи все этапы </p>
+                        <p>@lang('home.windows.text')</p>
                      </div>
                   </div>
                   <div class="servise__item-details">
-                     <a href="{{ route('washing-windows') }}" class="details-button">подробнее</a>
+                     <a href="{{ route('washing-windows.lang', ['locale' => __('lang.current')]) }}" class="details-button">@lang('home.more')</a>
                   </div>
                </div>
                <div class="servise__item">
                   <div class="servise__item-title">
-                     <h3>генеральная уборка</h3>
+                     <h3>@lang('home.general.title')</h3>
                   </div>
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
@@ -93,12 +91,11 @@
                         </video>
                      </div>
                      <div class="servise__item-gif-text">
-                        <p>Много времени заберет повседневная уборка и тратить жизнь на вытирание пыли или мойку полов
-                           нет смысла. Жми подробнее и заказывай услугу для себя</p>
+                        <p>@lang('home.general.text')</p>
                      </div>
                   </div>
                   <div class="servise__item-details">
-                     <a href="{{ route('spring-cleaning') }}" class="details-button">подробнее</a>
+                     <a href="{{ route('spring-cleaning.lang', ['locale' => __('lang.current')]) }}" class="details-button">@lang('home.more')</a>
                   </div>
                </div>
             </div>
@@ -106,7 +103,7 @@
             <div class="servise__block">
                <div class="servise__item">
                   <div class="servise__item-title">
-                     <h3>химчистка</h3>
+                     <h3>@lang('home.dry.title')</h3>
                   </div>
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
@@ -116,17 +113,16 @@
                         </video>
                      </div>
                      <div class="servise__item-gif-text">
-                        <p>Когда диван кровать или любимое кресло теряет цвет или всё в пятнах от кофе или животных
-                           комфорт в доме теряется. Мы знаем, как сделать Вашу мебель как новой жмите подробнее.</p>
+                        <p>@lang('home.dry.text')</p>
                      </div>
                   </div>
                   <div class="servise__item-details">
-                     <a href="{{ route('dry-cleaning') }}" class="details-button">подробнее</a>
+                     <a href="{{ route('dry-cleaning.lang', ['locale' => __('lang.current')]) }}" class="details-button">@lang('home.more')</a>
                   </div>
                </div>
                <div class="servise__item">
                   <div class="servise__item-title">
-                     <h3>послестроительная уборка</h3>
+                     <h3>@lang('home.build.title')</h3>
                   </div>
                   <div class="servise__item-gif">
                      <div class="servise__item-video">
@@ -136,12 +132,11 @@
                         </video>
                      </div>
                      <div class="servise__item-gif-text">
-                        <p>Окончание ремонта всегда праздник, а как приятно заехать в новое жильё и сразу жить, а не
-                           месяц убирать следы краски и цемента. Жми подробнее и изучи все этапы </p>
+                        <p>@lang('home.build.text')</p>
                      </div>
                   </div>
                   <div class="servise__item-details">
-                     <a href="{{ route('post-construction-cleaning') }}" class="details-button">подробнее</a>
+                     <a href="{{ route('post-construction-cleaning.lang', ['locale' => __('lang.current')]) }}" class="details-button">@lang('home.more')</a>
                   </div>
                </div>
             </div>
@@ -152,7 +147,7 @@
    <div class="clients">
       <div class="container">
          <div class="clients-title">
-            <h2 class="block-title">Наши клиенты</h2>
+            <h2 class="block-title">@lang('home.clients')</h2>
          </div>
          <div class="slider-clients">
             <div class="slider-clients-item">

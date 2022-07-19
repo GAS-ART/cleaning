@@ -4,18 +4,18 @@
       <div class="popup__content">
          <a href="#" class="popup__close close-popup">X</a>
          <div class="popup__title">
-            <h4>ФОРМА ЗАКАЗА ОБРАТНОГО ЗВОНКА</h4>
+            <h4>@lang('popup.call_back')</h4>
          </div>
          <div class="popup__text">
             <form class="popup__form" id="send-form" name="popupForm" method="post" action="{{route('send')}}"
                autocomplete="on">
                @csrf
                <div class="contacts-form__item data popup-data">
-                  <input class="data__text-field" type="text" name="name" placeholder="Как к Вам обращаться?">
+                  <input class="data__text-field" type="text" name="name" placeholder="@lang('popup.name')">
                   <p class="error-popup name-error"></p>
                </div>
                <div class="contacts__phone popup-phone">
-                  <input class="phone" type="text" name="phone" placeholder="Введите номер телефона">
+                  <input class="phone" type="text" name="phone" placeholder="@lang('popup.phone')">
                   <p class="error-popup phone-error"></p>
                </div>
                <div class="popup__button">
@@ -27,7 +27,7 @@
          </div>
          <div class="popup__confirm confirm">
             <div class="popup__title">
-               <h4><span>ЗВОНОК ЗАКАЗАН</span><br><br>Мы перезвони Вам в течении 10 минут</h4>
+               <h4><span>@lang('popup.success')</h4>
             </div>
             <div class="confirm__button">
                <div class="button">
@@ -44,18 +44,18 @@
       <div class="popup__content popup__content-contacts">
          <a href="#" class="popup__close close-popup close-popup-contacts">X</a>
          <div class="popup__title popup__title-contacts">
-            <h4>КОНТАКТЫ</h4>
+            <h4>@lang('popup.contacts')</h4>
          </div>
          <div class="popup__text popup__text-contacts">
             <div class="popup__contacts-mesendgers">
                <div class="contacts-viber">
                   <a href="viber://chat?number=%2B380636642636"><img src="{{ asset('img/icons/viber.svg') }}"
                         alt=""></a>
-                  <a href="viber://chat?number=%2B380636642636">Написать</a>
+                  <a href="viber://chat?number=%2B380636642636">@lang('popup.write')</a>
                </div>
                <div class="contacts-telegram">
                   <a href="tg://resolve?domain=Alexklining"><img src="{{ asset('img/icons/telegram.png') }}" alt=""></a>
-                  <a href="tg://resolve?domain=Alexklining">Написать</a>
+                  <a href="tg://resolve?domain=Alexklining">@lang('popup.write')</a>
                </div>
             </div>
             <div class="popup__contacts-phone">

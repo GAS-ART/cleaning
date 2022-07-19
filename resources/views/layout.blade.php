@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="@lang('lang.current')">
 
 <head>
    <meta charset="UTF-8">

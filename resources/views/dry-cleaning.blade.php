@@ -1,6 +1,6 @@
 @extends('layout')
-@section('ogTitle','ХИМЧИСТКА МЕБЕЛИ :: ПРОСТО ЧИСТО')
-@section('ogDescription','Профессиональная химчистка мебели в Днепре. Новейшее оборудование и органическая химия')
+@section('ogTitle', __('title.dry.ogTitle'))
+@section('ogDescription', __('title.dry.ogDescription'))
 @section('ogVideo')
 <meta property="og:video" content="https://www.xn--c1ajagfnb.dp.ua/img/gif/old/6_1.mp4" />
 <meta property="og:video:secure_url" content="https://www.xn--c1ajagfnb.dp.ua/img/gif/old/6_1.mp4" />
@@ -8,7 +8,7 @@
 <meta property="og:video:width" content="360" />
 <meta property="og:video:height" content="200" />
 @endsection
-@section('title','ПРОСТО ЧИСТО - химчистка мебели в Днепре')
+@section('title', __('title.dry.title'))
 @section('dryCleaning','active')
 
 
@@ -18,20 +18,19 @@
    <div class="stages">
       <div class="container">
          <div class="stages-title">
-            <h1 class="block-title">химчистка мебели</h1>
+            <h1 class="block-title">@lang('dry.title')</h1>
          </div>
          <div class="about-text__text about-text-service">
-            Компания <span class="about-text-span">«Клининг.UA»</span> – работаем в удобное время для вас. Наш опыт,
-            оборудование позволяет сделать работу быстро и качественно. Работаем 7 дней в неделю 24 часа в сутки.
+         @lang('dry.description')
          </div>
          <div class="our-usefulness">
             <div class="whom">
-               Для кого можем быть полезны:
+            @lang('dry.usful.title')
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Частные лица:
+                  @lang('dry.usful.private')
                   </div>
                   <div data-event-name="Частные_лица" data-page="Химчистка" data-first-click="true"
                      class="our-usefulness-tittle-btn">
@@ -39,25 +38,13 @@
                   </div>
                </div>
                <div class="our-usefulness-text">
-                  Используем гипоаллергенный средства при работе. Наши средства сделаны на органической основе, что
-                  позволяет<span class="dots-read-more">...</span>
-                  <span class="show-text"> им
-                     исчезнуть
-                     через сутки. По мимо общих загрязнений, убираем пятна
-                     от мочи, кофе, жира,
-                     чернил и разных запахов.
-                     <br><br>
-                     Так же, мы можем быть вам предложить другие виды работ, генеральная уборка, уборка после ремонта,
-                     убрать плесень, запахи, мойка окон. За более детально информации прошу обращаться нашим
-                     менеджерам.
-                  </span>
-
+               @lang('dry.usful.private_text')
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Рестораны:
+                  @lang('dry.usful.restorant')
                   </div>
                   <div data-event-name="Рестораны" data-page="Химчистка" data-first-click="true"
                      class="our-usefulness-tittle-btn">
@@ -65,24 +52,13 @@
                </div>
 
                <div class="our-usefulness-text">
-                  Выполняем работу в ночное или удобное для вас время, рассчитываем процесс работы при открытии
-                  заведения, мебель<span class="dots-read-more">...</span>
-                  <span class="show-text"> была
-                     готова к использованию. Работаем с любой формой оплат. По мимо общих
-                     загрязнений удаляем, пятна от жира, вино, кофе, краску, чернила. Можем работать по договору на
-                     постоянной основе.
-                     <br><br>
-                     Так же, мы можем быть вам предложить другие виды работ: мойка фасада, окон, химчистка пола,
-                     обезжиривание кухни, ген уборка, удаление запахов. За более детально информации прошу обращаться
-                     нашим
-                     менеджерам.
-                  </span>
+               @lang('dry.usful.restorant_text')
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Отели:
+                  @lang('dry.usful.hotel')
                   </div>
                   <div data-event-name="Отели" data-page="Химчистка" data-first-click="true"
                      class="our-usefulness-tittle-btn">
@@ -91,21 +67,13 @@
                </div>
 
                <div class="our-usefulness-text">
-                  Выполняем работу в ночное или удобное время для вас. Выполняем химчистку матрасов, ковролина, ковровых
-                  дорожек<span class="dots-read-more">...</span> <span class="show-text">,
-                     кресел, диванов, стульев. Химчистка пола. Работаем с любой формой оплат.
-                     <br><br>
-                     Так же, мы можем быть вам предложить другие виды работ: Мойка окон, фасада, генеральная уборка
-                     (обеспыливание стен, потолка), уборка нестандартных помещений.
-                     <br><br>
-                     За более детально информации прошу обращаться нашим менеджерам.
-                  </span>
+               @lang('dry.usful.hotel_text')
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Офисные помещения:
+                  @lang('dry.usful.office')
                   </div>
                   <div data-event-name="Офисы" data-page="Химчистка" data-first-click="true"
                      class="our-usefulness-tittle-btn">
@@ -114,21 +82,13 @@
                </div>
 
                <div class="our-usefulness-text">
-                  Выполняем работу в ночное или удобное время для вас. Выполняем химчистку кресел, диванов, ковролина,
-                  орг. Техники<span class="dots-read-more">...</span> <span class="show-text">.
-                     Работаем с любой формой оплат.
-                     <br><br>
-                     Так же, мы можем быть вам предложить другие виды работ: мойка фасада, окон, химчистка пола,
-                     удаления
-                     запахов (например табак), ген уборка (обеспыливание стен, потолка),. За более детальной информацией
-                     прошу обращаться к нашим менеджерам.
-                  </span>
+               @lang('dry.usful.office_text')
                </div>
             </div>
             <div class="our-usefulnes-item">
                <div class="our-usefulness-tittle">
                   <div class="our-usefulness-tittle-text">
-                     Торговые комплексы:
+                  @lang('dry.usful.malls')
                   </div>
                   <div data-event-name="Торговые_комплексы" data-page="Химчистка" data-first-click="true"
                      class="our-usefulness-tittle-btn">
@@ -137,29 +97,19 @@
                </div>
 
                <div class="our-usefulness-text">
-                  Выполняем работу в ночное или удобное время для вас. Работаем с любой формой оплат. Выполняем
-                  химчистку кресел,<span class="dots-read-more">...</span> <span class="show-text">
-                     диванов, ковролина.
-                     <br><br>
-                     Так же, мы можем быть вам полезны с другими видами работ: мойка фасада, окон, вывески, химчистка
-                     пола,
-                     уборка после пожара, наводнения, удаления запахов (например табака), ген уборка (обеспыливание
-                     стен,
-                     потолка), уборка нестандартных помещении. За более детально информации прошу обращаться нашим
-                     менеджерам.
-                  </span>
+               @lang('dry.usful.malls_text')
                </div>
             </div>
          </div>
       </div>
       <div class="stages-block stages-block-color">
          <div class="container">
-            <div class="stages-block-tittle">ЭТАПЫ РАБОТ:</div>
+            <div class="stages-block-tittle">@lang('dry.stages')</div>
             <div class="stages-row">
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Нанесение специальной химии</h2>
+                        <h2>@lang('dry.1')</h2>
                      </div>
                      <div class="stages-item-img">
                         <img src="{{ asset('img/stages/dry_clining/dry_clining-1.jpg') }}"
@@ -167,15 +117,14 @@
                            title="Химчистка диванов, кресел, ковров и любой мягкой мебели">
                      </div>
                      <div class="stages-item-description">
-                        <p>Очень важно покрыть равномерно всю поверхность социальной антиаллергенной органической
-                           химией. Необходимо выждать время для разрушения основы грязи 10-15 минут</p>
+                        <p>@lang('dry.1_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Разрушение грязи</h2>
+                        <h2>@lang('dry.2')</h2>
                      </div>
                      <div class="stages-item-img">
                         <img src="{{ asset('img/stages/dry_clining/dry_clining-2.jpg') }}"
@@ -183,15 +132,14 @@
                            title="Химчистка диванов, кресел, ковров и любой мягкой мебели">>
                      </div>
                      <div class="stages-item-description">
-                        <p>С помощью специального устройства очищается поверхность мебели для получения равномерной
-                           цветовой гаммы и потери контуров пятен</p>
+                        <p>@lang('dry.2_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Проработка пятен сложных мест</h2>
+                        <h2>@lang('dry.3')</h2>
                      </div>
                      <div class="stages-item-img">
                         <img src="{{ asset('img/stages/dry_clining/dry_clining-3.jpg') }}"
@@ -199,15 +147,14 @@
                            title="Химчистка диванов, кресел, ковров и любой мягкой мебели">>
                      </div>
                      <div class="stages-item-description">
-                        <p>После прохождения орбитальной машиной, возможно, останутся пятна от краски или клея, вина,
-                           кофе. С помощью подбора активной химии и повторной проработки, убираются остальные пятна</p>
+                        <p>@lang('dry.3_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Собираем грязь</h2>
+                        <h2>@lang('dry.4')</h2>
                      </div>
                      <div class="stages-item-img correct-img">
                         <img src="{{ asset('img/stages/dry_clining/dry_clining-4.jpg') }}"
@@ -215,16 +162,14 @@
                            title="Химчистка диванов, кресел, ковров и любой мягкой мебели">>
                      </div>
                      <div class="stages-item-description">
-                        <p>Грязь и остатки химии необходимо собрать, а в ручную это сделать невозможно. С помощью
-                           специального моющего пылесоса собирается, все остатки пыли грязи. Этот процесс
-                           восстанавливает первичный цвет ткани и даёт свежесть мебели</p>
+                        <p>@lang('dry.4_text')</p>
                      </div>
                   </div>
                </div>
                <div class="stages-item">
                   <div class="stages-item-row">
                      <div class="stages-item-title">
-                        <h2>Сушка мебели</h2>
+                        <h2>@lang('dry.5')</h2>
                      </div>
                      <div class="stages-item-img">
                         <img src="{{ asset('img/stages/dry_clining/dry_clining-5.jpg') }}"
@@ -232,8 +177,7 @@
                            title="Химчистка диванов, кресел, ковров и любой мягкой мебели">>
                      </div>
                      <div class="stages-item-description">
-                        <p>Очень важно сократить время высыхания мебели и это можно сделать с помощью специального
-                           нагнетателя воздуха который позволит сократить цикл высыхания до 4 часов</p>
+                        <p>@lang('dry.5_text')</p>
                      </div>
                   </div>
                </div>
@@ -243,7 +187,7 @@
       <div class="container">
          <div class="call-order">
             <div class="button-call-order">
-               <a href="#" class="call-oder-button">заказать звонок</a>
+               <a href="#" class="call-oder-button">@lang('call.contacts')</a>
             </div>
 
          </div>
@@ -252,7 +196,7 @@
    <div class="work-examples">
       <div class="container">
          <div class="work-examples-title">
-            <h2 class="block-title">выполненные работы</h2>
+            <h2 class="block-title">@lang('slider.works')</h2>
          </div>
          <div class="slider-work-examples">
             <div class="work-examples-item">
@@ -283,7 +227,7 @@
          <div class="work-examples-buttom">
             <div class="work-examples-buttom-row">
                <div class="button-after">
-                  ПОСЛЕ
+                  @lang('slider.after')
                </div>
 
                <div class="button-none">X</div>
