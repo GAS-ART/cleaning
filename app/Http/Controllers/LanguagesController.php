@@ -17,7 +17,7 @@ class languagesController extends Controller
 
         $languages = ['/ru', '/ua' ];
 
-        if(Str::contains($url, ['ru', 'ua' ]) ){
+        if(Str::contains($url, ['/ru', '/ua' ]) ){
             for ($i=0; $i < count($languages); $i++) {
                 if (Str::contains($url,  $languages[$i]) ) {
                     $url = str_replace($languages[$i], '/' . $locale, $url);
