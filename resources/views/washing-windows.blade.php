@@ -9,6 +9,7 @@
 <meta property="og:video:height" content="200" />
 @endsection
 @section('title', __('title.window.title'))
+@section('lang', __('lang.current'))
 @section('washingWindows','active')
 
 @section('content')

@@ -9,6 +9,7 @@
 <meta property="og:video:height" content="200" />
 @endsection
 @section('title', __('title.build.title'))
+@section('lang', __('lang.current'))
 @section('postConstructionCleaning','active')
 
 @section('content')

@@ -2,6 +2,7 @@
 @section('ogTitle', __('title.main.ogTitle'))
 @section('ogDescription', __('title.main.ogDescription'))
 @section('title', __('title.main.title'))
+@section('lang', __('lang.current'))
 @section('main','active')
 
 @section('content')

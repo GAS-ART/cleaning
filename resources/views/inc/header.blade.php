@@ -1,3 +1,4 @@
+
 @section('header')
 <div class="container">
    <header class="header">
@@ -137,7 +138,7 @@
          <div class="burger">
             <span></span>
          </div>
-         <div class="header-languages">
+         <div class="header-languages @yield('lang')">
             <div class="header-languages-ua"><a href="{{ route('locale', __('lang.ua')) }}">UA</a></div>
             <div class="header-languages-ru"><a href="{{ route('locale', __('lang.ru')) }}">RU</a></div>
          </div>
