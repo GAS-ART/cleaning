@@ -7,7 +7,7 @@ if ($data['google_key'] === '26ahAmim'){
 	$phone 	 = sanitizeString($data['user_column_data']['1']['string_value']);
 	$service = sanitizeString($data['user_column_data']['2']['string_value']);
 	$hook 	 = "Полное имя" . ": " . $name . "\n\n" . "Телефон"  . ": " . $phone . "\n\n" ."Вид услуги: " . $service . "\n\n";
-	mail('temoha1386@gmail.com', 'ЗАЯВКА С ФОРМЫ ГУГЛ', $hook);
+	mail('dnepr.jc@gmail.com', 'ЗАЯВКА С ФОРМЫ ГУГЛ', $hook);
 }
 
 function sanitizeString($var)
