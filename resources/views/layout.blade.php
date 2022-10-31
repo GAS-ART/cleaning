@@ -30,14 +30,14 @@
    <!-- Global site tag (gtag.js) - Google Ads: 957048846 -->
    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=AW-957048846"></script>
    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-957048846');</script>-->
-   <!-- Google tag (gtag.js) -->
+   <!-- Google tag (gtag.js) 
    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10998840814"></script>
    <script>
    window.dataLayer = window.dataLayer || [];
    function gtag(){dataLayer.push(arguments);}
    gtag('js', new Date());
    gtag('config', 'AW-10998840814');
-   </script>
+   </script>-->
    
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -46,9 +46,26 @@
    window.dataLayer = window.dataLayer || [];
    function gtag(){dataLayer.push(arguments);}
    gtag('js', new Date());
-
    gtag('config', 'G-MBNQ39W38Z');
+   gtag('config', 'AW-10998840814');
    </script>
+
+   <!-- Event snippet for Контакт conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10998840814/x_GlCNSvpIAYEO770_wo',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
    
    <title>@yield('title')</title>
 </head>

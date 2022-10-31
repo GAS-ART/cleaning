@@ -15,6 +15,14 @@ window.onload = function () {
    const buttonNone = document.querySelector('.button-none');
    const readMoreBtn = document.querySelectorAll('.our-usefulness-tittle-btn')
 
+
+   let conversions = document.querySelectorAll('._conversion');
+   conversions.forEach(conversion => {
+      conversion.addEventListener('click', function(){
+         gtag_report_conversion();
+      });
+   });
+
    readMoreBtn.forEach((item) => {
       item.addEventListener('click', function (e) {
          e.target.classList.toggle('active');
