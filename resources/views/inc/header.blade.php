@@ -129,7 +129,7 @@
 
                      <a href="{{ route('fire.lang', ['locale' => __('lang.current')]) }}"
                         class="blob-btn @yield('fire')">
-                        Уборка после пожара
+                        @lang('header.fire')
                         <span class="blob-btn__inner">
                            <span class="blob-btn__blobs">
                               <span class="blob-btn__blob"></span>
