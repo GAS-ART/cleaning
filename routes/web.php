@@ -128,3 +128,23 @@ Route::get('/{locale}/Послестроительная_уборка', function
 })->name('post-construction-cleaning.lang');
 
 Route::get('/politika_konfidencialnosti', function () {return view('politika_konfidencialnosti');})->name('politika_konfidencialnosti');
+
+Route::get('/{locale}/уборка-после-пожара', function ($locale) {
+
+   if (! in_array($locale, ['ua', 'ru'])) { 
+
+      abort(404);
+
+   } else if ($locale == 'ua') {
+
+      App::setLocale('ua');
+      return view('fire');
+
+   } else if ($locale == 'ru') {
+
+      App::setLocale('ru');
+      return view('fire');
+   }
+})->name('fire.lang');
+
+Route::get('/politika_konfidencialnosti', function () {return view('politika_konfidencialnosti');})->name('politika_konfidencialnosti');
