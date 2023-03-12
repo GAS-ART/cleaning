@@ -18,9 +18,6 @@
       <div class="messenger-row">
          <div class="messengers-contacts">
             <div class="contacts-phone">
-            <a href="tel:0976394515">(097)639-45-15</a>
-            </div>
-            <div class="contacts-phone">
                <a href="tel:0636642636">(063)664-26-36</a>
             </div>
             <div class="contacts-email">

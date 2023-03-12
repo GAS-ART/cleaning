@@ -60,9 +60,6 @@
             </div>
             <div class="popup__contacts-phone">
                <div class="contacts-phone">
-                  <a href="tel:0976394515" class="_conversion">(097)639-45-15</a>
-               </div>
-               <div class="contacts-phone">
                   <a href="tel:0636642636" class="_conversion">(063)664-26-36</a>
                </div>
             </div>
