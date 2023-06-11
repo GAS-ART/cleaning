@@ -18,7 +18,7 @@ window.onload = function () {
 
    let conversions = document.querySelectorAll('._conversion');
    conversions.forEach(conversion => {
-      conversion.addEventListener('click', function(){
+      conversion.addEventListener('click', function () {
          gtag_report_conversion();
       });
    });
@@ -151,17 +151,18 @@ window.onload = function () {
    /*POPUP-CONTACTS*/
    const popupContats = document.getElementById('popup-contacts');
    const popupContatsCloseIcon = document.querySelector('.close-popup-contacts');
-   const popupContatsBtn = document.querySelector('.messenger-icon');
-
-   popupContatsBtn.addEventListener('click', function (e) {
-      popupContats.classList.add('open');
-      bodyLock.classList.add("lock");
-      popupContats.addEventListener("click", function (e) {
-         if (!e.target.closest('.popup__content-contacts')) {
-            popupContatsClose();
-         }
+   const popupContatsBtn = document.querySelectorAll('.messenger-icon');
+   popupContatsBtn.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+         popupContats.classList.add('open');
+         bodyLock.classList.add("lock");
+         popupContats.addEventListener("click", function (e) {
+            if (!e.target.closest('.popup__content-contacts')) {
+               popupContatsClose();
+            }
+         });
+         e.preventDefault();
       });
-      e.preventDefault();
    });
 
    popupContatsCloseIcon.addEventListener("click", function (e) {
