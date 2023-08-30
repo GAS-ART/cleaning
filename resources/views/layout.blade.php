@@ -23,7 +23,7 @@
    <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') . '?_v=13' }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') . '?_v=14' }}">
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script src="{{ asset('js/slick.min.js') }}"></script>
    <script src="{{ asset('js/script.js') . '?_v=4' }}"></script>
