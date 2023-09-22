@@ -14,7 +14,7 @@ class sendController extends Controller {
 
         /*ОТПРАВКА ДАННЫХ ИЗ ФОРМЫ И ФАЙЛА НА ПОЧТУ*/
         mail::send(['html' => 'mail'], ['name' => $name, 'phone' => $phone, ], function($message) {
-        $message->to('sashasdnepr2110@gmail.com')->subject('ЗАКАЗ ЗВОНКА ИЗ ФОРМЫ ОБРАТНОЙ СВЯЗИ');
+        $message->to('dnepr.jc@gmail.com')->subject('ЗАКАЗ ЗВОНКА ИЗ ФОРМЫ ОБРАТНОЙ СВЯЗИ');
         });
 
         return view('send');
