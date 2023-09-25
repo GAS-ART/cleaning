@@ -171,7 +171,7 @@
          </div>
          <div class="header-languages @yield('lang')">
             <div class="header-languages-ua"><a href="{{ route('locale', __('lang.ua')) }}">UA</a></div>
-            <div class="header-languages-ru"><a href="{{ route('locale', __('lang.ru')) }}">RU</a></div>
+            <div class="header-languages-ru"><a href="{{ route('locale', __('lang.ru')) }}">інша</a></div>
          </div>
       </div>
    </header>
