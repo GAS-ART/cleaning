@@ -49,9 +49,9 @@
          <div class="popup__text popup__text-contacts">
             <div class="popup__contacts-mesendgers">
                <div class="contacts-viber">
-                  <a href="viber://chat?number=%2B380636642636" class="_conversion"><img src="{{ asset('img/icons/viber.svg') }}"
+                  <a href="viber://chat?number=%2B380504877774" class="_conversion"><img src="{{ asset('img/icons/viber.svg') }}"
                         alt=""></a>
-                  <a href="viber://chat?number=%2B380636642636" class="_conversion">@lang('popup.write')</a>
+                  <a href="viber://chat?number=%2B380504877774 class="_conversion">@lang('popup.write')</a>
                </div>
                <div class="contacts-telegram">
                   <a href="tg://resolve?domain=Alexklining" class="_conversion"><img src="{{ asset('img/icons/telegram.png') }}" alt=""></a>
@@ -60,11 +60,11 @@
             </div>
             <div class="popup__contacts-phone">
                <div class="contacts-phone">
-                  <a href="tel:0636642636" class="_conversion">(063)664-26-36</a>
+                  <a href="tel:0504877774" class="_conversion">(050)487-77-74</a>
                </div>
             </div>
             <div class="contacts-email">
-               <a href="mailto:dnepr.jc@gmail.com" class="_conversion">dnepr.jc@gmail.com</a>
+               <a href="mailto:inegra7249725@gmail.com" class="_conversion">inegra7249725@gmail.com</a>
             </div>
          </div>
       </div>

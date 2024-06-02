@@ -18,18 +18,18 @@
       <div class="messenger-row">
          <div class="messengers-contacts">
             <div class="contacts-phone">
-               <a href="tel:0636642636">(063)664-26-36</a>
+               <a href="tel:0504877774">(050)487-77-74</a>
             </div>
             <div class="contacts-email">
-               <a href="mailto:dnepr.jc@gmail.com">dnepr.jc@gmail.com</a>
+               <a href="mailto:inegra7249725@gmail.com">inegra7249725@gmail.com</a>
             </div>
             <div class="contacts-viber">
-               <a href="viber://chat?number=%2B380636642636"><img src="{{ asset('img/icons/viber.svg') }}" alt=""></a>
-               <a href="viber://chat?number=%2B380636642636">Написать</a>
+               <a href="viber://chat?number=%2B380504877774"><img src="{{ asset('img/icons/viber.svg') }}" alt=""></a>
+               <a href="viber://chat?number=%2B380504877774">Написать</a>
             </div>
             <div class="contacts-telegram">
-               <a href="tg://resolve?domain=Alexklining"><img src="{{ asset('img/icons/telegram.png') }}" alt=""></a>
-               <a href="tg://resolve?domain=Alexklining">Написать</a>
+               <a href="tg://resolve?domain=HelsingInt"><img src="{{ asset('img/icons/telegram.png') }}" alt=""></a>
+               <a href="tg://resolve?domain=HelsingInt">Написать</a>
             </div>
          </div>
          <div class="messenger-icon contacts _phone-phone">

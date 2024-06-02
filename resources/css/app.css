@@ -2125,6 +2125,7 @@ video {
 .popup__contacts-mesendgers {
     display: flex;
     align-items: center;
+    transform: translateX(35px);
 }
 .popup__contacts-phone .contacts-phone:not(:last-child) {
     margin-right: 40px;
@@ -2133,6 +2134,7 @@ video {
 .popup__contacts-phone {
     margin-top: 15px;
     justify-content: center;
+    
 }
 .contacts-viber {
     /* margin-right: 20px;
@@ -2177,6 +2179,7 @@ video {
         left: 0;
         margin: 0 0 0px 0;
         align-items: center;
+        transform: unset;
     }
     .contacts-viber {
         margin-right: 0px;
